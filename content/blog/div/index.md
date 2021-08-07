@@ -1,6 +1,6 @@
 ---
 title: The display property
-date: "2020-08-6T22:12:03.284Z"
+date: "2020-08-06T22:12:03.284Z"
 description: "The display property"
 ---
 
