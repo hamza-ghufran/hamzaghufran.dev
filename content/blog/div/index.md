@@ -1,9 +1,7 @@
 ---
-
 title: The display property
-date: "22nd August 2020"
+date: "2020-08-6T22:12:03.284Z"
 description: "The display property"
-
 ---
 
 Often times when you are performing some repitive task, you get comfortable with what it is and fail to find a better - more optimal solution. Or, you overlook some very basic concepts and remain content with the outcome you produce.

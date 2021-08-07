@@ -1,6 +1,6 @@
 ---
 title: box-sizing, z-index, position properties
-date: "31st August 2020"
+date: "2020-08-22T22:12:03.284Z"
 description: "Hello World"
 ---
 
