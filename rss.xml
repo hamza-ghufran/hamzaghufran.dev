@@ -1,4 +1,696 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Seeker]]></title><description><![CDATA[Words and Code]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Aug 2021 19:34:56 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Seeker]]></title><description><![CDATA[Words and Code]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Aug 2021 20:10:31 GMT</lastBuildDate><item><title><![CDATA[box-sizing, z-index, position properties]]></title><description><![CDATA[The Box-sizing Property Let me tell you a story about a Beta who wished to be an Alpha. Beta was ‘beta’ because he had a problem, the…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/position/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/position/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;h1&gt;The Box-sizing Property&lt;/h1&gt;
+&lt;p&gt;Let me tell you a story about a Beta who wished to be an Alpha. Beta was ‘beta’ because he had a problem, the problem was about him not paying attention to details. One day he decided to meet Alpha and study his structure.&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/6d14ec1e3abc830094de52f260cb135b/76823/1.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAuUlEQVQoz5WSyw6EIAxF/f/vY+HOsDBRE1HxzYI7uc10Yoyj2KQp0Pa0QDN8Jcb4s6l6zFPJjpuz80mu4rOz03uPuq5RFIXYYRjQdR2cc7DWoqoqWU/TdN+hOghomgbGGAH2fY+2bTGOI/I8R1mWsmZcMpDVQwhYlkWA7JBn27ZhXVcBUpOABBCqSbyeAqnzPMs5nyYJyASF0hJCqBbgnr5H4N0vswgBqgTu+57W4b95ez02dwlvBvsDAvURrcxyxWwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;1&quot; title=&quot;1&quot; src=&quot;/hamzaghufran.dev/static/6d14ec1e3abc830094de52f260cb135b/f058b/1.png&quot; srcset=&quot;/hamzaghufran.dev/static/6d14ec1e3abc830094de52f260cb135b/c26ae/1.png 158w,
+/hamzaghufran.dev/static/6d14ec1e3abc830094de52f260cb135b/6bdcf/1.png 315w,
+/hamzaghufran.dev/static/6d14ec1e3abc830094de52f260cb135b/f058b/1.png 630w,
+/hamzaghufran.dev/static/6d14ec1e3abc830094de52f260cb135b/40601/1.png 945w,
+/hamzaghufran.dev/static/6d14ec1e3abc830094de52f260cb135b/76823/1.png 1038w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;p&gt;On meeting Alpha, Beta pulled out his inspect tool.&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/d68a63beca7c9714ba95617b2b305d7f/7de01/2.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 63.92405063291139%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABZ0lEQVQ4y42TW0/CQBBG+f8PvuiTGI3R+OQ1+uQVUqEYqxZj8BITQAyxtLRSui1F02N2BYOI0E2+7Ex2cubb7GyGJCFJEuRKBvEkDc9nrYwq/K5W+79K2SyjggGMjx70fIhHJPPPeKqrUeeZ0S6iVuDhaoNKeYd7c5tKeZdHY42oYdBqv9N2bGzbxnVdJcuyEEL8dThMOtUcWyWN+cMn5vYNFo6f2b84QtTPsZwOQgSYpomu6/i+j+M4av8X6NfybBd1smctls8aZHM2B/op4UsBx+0SCkEQBHS7XcIwVC5lPANYZCnXYiX/OgCeKKCtgIECymumAnZqOTZL52S1JstalUWtyV7pGFH/BooBUCoVUFQ17ox1bm92uL3eonyzS+VyFVG/wPF8ojBU7qSiKMLzvMnAn7HphxC5Y/L46AW8WZYCDF9YxvKVpdtfwDSDrXr1+8Rx/EcTBzvt10s12GkKpzUad/gFPTbmGmjZZGMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;2&quot; title=&quot;2&quot; src=&quot;/hamzaghufran.dev/static/d68a63beca7c9714ba95617b2b305d7f/f058b/2.png&quot; srcset=&quot;/hamzaghufran.dev/static/d68a63beca7c9714ba95617b2b305d7f/c26ae/2.png 158w,
+/hamzaghufran.dev/static/d68a63beca7c9714ba95617b2b305d7f/6bdcf/2.png 315w,
+/hamzaghufran.dev/static/d68a63beca7c9714ba95617b2b305d7f/f058b/2.png 630w,
+/hamzaghufran.dev/static/d68a63beca7c9714ba95617b2b305d7f/7de01/2.png 794w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;p&gt;On reading Alpha’s properties, he was shocked to find out that both, him and Alpha, had similar properties.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.alpha {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.beta {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Amazed by what he had just discovered he asked Alpha..
+&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“So what makes you different: I have the same width, height, padding, margin &amp;#x26; border, yet you appear different in size and structure, how’s that possible ?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Are you aware of the reality of Box model”.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“Nope! Never heard of it”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let me show you:&lt;/p&gt;
+&lt;h2&gt;Box Model&lt;/h2&gt;
+&lt;p&gt;The box model is the basic building block of CSS. Every element in web design is a rectangular box.&lt;/p&gt;
+&lt;p&gt;Let’s look at the structure of the box model: (From top to bottom, order wise)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Margin&lt;/li&gt;
+&lt;li&gt;Border&lt;/li&gt;
+&lt;li&gt;Padding&lt;/li&gt;
+&lt;li&gt;Content (height and width),&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are all the elements the browser needs in order to render a box model.
+With CSS you can control each of them individually.&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 370px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/c5194b6ffdeda5b63f9ff038b937c7eb/1efb2/3.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 84.81012658227847%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAADNUlEQVQ4y4WU/U9TVxjH+3eMgaW39cdlmcmyLEs2tDUuccnYZBOUzey1xbnEHwqtt2+UFmxLlcQVGbCiW7J0WlnfW5DeFuktRECd09+WTCCLQ/+Iz3JvW+TN7IfPfc7zPed875Pn5ByNIAi06gQEvR59HUHQoxMElDndNoSXaDpdbazs1Sgf66l3CfUcZeCrIyq+r48QtJgIWY4Sspi4aDYRMJvUNYoWsNRyZY3Cpe+Oceyd12k50IrGoNczYT1OzPURI99/QPjcca5f+Jh8sIv0UCeZoU6S/pOkB2vj3aQGTzIb/JSu99+kqbkVzcGDBi71mFi8fp5HOQ/LcRur03aVP9MOHmWcPM461bibxxkHf6Q8ZANddJgO8WpL3TBsNvLwlo0nd7zkJszMRM+Sn+xhs+plU/ayUXbzz4KHf+V+nla2IXtYrwyRHz7NCeMbLwyVCu//ZmVd9lOec1Esupi77WKm4FCjVHRTkjyUJDelkodyyUNRcnO/6GZtflA13FHhZcXwRi9PKn5yZTc//nqW8NUzXB7/gpGJL4llz1NYdFCoOsjLIgVZJLngYklys1E3/MR0iKbdhmvyIDNlkZ+zYSKJX7iajDISG+OH6SijiSmuxMcZTV5jLBnl91I/y2UX6/NDew2HzUZWYlb+mveRL/YRSUTpTyzTG01iDk7SN5XCOpng28A4zpiE71aJ2IyXpaLI35KfdOAUHcbth2IxbqvQQWw2SDQzxlQmwk+pK0TTEaayo7VxZpRrmQiJsmerwpzSQ+M+PVyT/WQkF1nZSb4ikpNF8rKD9Lyd7MIF8lVHXRNJ/F8P7ymnXPEhzzqRJTdy8eVUJTcLcy4ezrlYK/v3MzTyIG7n+WqIZ4s+ni/5d/BUHmBz0b9Hf7bkY6MaojDc/cLQYDAQ7jFxZ+Ic96YdrNy0sRK372BZ0W7a9+ircRt3b4ikL3ZyotHDxl2+Hegg2f8h6YH2PST720l52/edU/TicOMua2uvzTftbyOeOYztszaVvu5atNfpPf2eqjVyW3fbVq6sEz9v4/Bbr3FAq0OjvGdKqa80a9UeKLFBU4tW/etW3rxPXt+jbdWp7+F/Yqo7Vmzg9YoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;3&quot; title=&quot;3&quot; src=&quot;/hamzaghufran.dev/static/c5194b6ffdeda5b63f9ff038b937c7eb/1efb2/3.png&quot; srcset=&quot;/hamzaghufran.dev/static/c5194b6ffdeda5b63f9ff038b937c7eb/c26ae/3.png 158w,
+/hamzaghufran.dev/static/c5194b6ffdeda5b63f9ff038b937c7eb/6bdcf/3.png 315w,
+/hamzaghufran.dev/static/c5194b6ffdeda5b63f9ff038b937c7eb/1efb2/3.png 370w&quot; sizes=&quot;(max-width: 370px) 100vw, 370px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Margin:&lt;/strong&gt;
+Creates space around elements, it is the space outside of any defined borders.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Border:&lt;/strong&gt;
+The border surrounds the content, and you don’t have to use it, but it still exists. By default, border has a width of 0px.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Padding:&lt;/strong&gt;
+Padding defines the space between the content and the edge of the box.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content:&lt;/strong&gt;
+It represents the actual stuff, text, image, etc. and has a specific width and height.
+Fixed height and width can be set using the height and width of CSS properties, or they can be determined by the content itself.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Read about &lt;code class=&quot;language-text&quot;&gt;inline vs inline-block&lt;/code&gt; to further understand this line: &lt;code class=&quot;language-text&quot;&gt;determined by the content itself&lt;/code&gt; &lt;a href=&quot;https://github.com/hamza-ghufran/journal/blob/master/content:posts/2020-08-22/index.md&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Beta, Do you know what defines the width of an element ?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;” I am listening”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There is a formula for defining this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;width = left margin + left border + left padding + content + right padding + right border + right margin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/70b137fbfef1db79692ba7ee23c8fca6/9aaee/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 42.405063291139236%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA40lEQVQoz52R60rEMBCF+/6P6I8VL2iVrW47mUtT00+a7kq3iqADQ0g4+ebkpGFX8zx/rZcuQCml9uVsq91W8xNwFc7EmOnae+TpgKkhIqjqf4FUQEqJ/rXl+eXA2+mISLpy/2egm3H72HJz90DXHavDve4KuJ22n1zd9T2minvUAct+n/G2vzncVikz7iMRzhhORDDlj9+u0CxPWJy4Dky+ZjZJjy+foAORBYuMRsbdSd5jIfWTsvSEGaaJEmu2Z6BWYLahZjSdhQtQ40SyIPmIpoToO+oDmpQsQ9VpEkpIBX4C3aJ0TOBa4rQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/70b137fbfef1db79692ba7ee23c8fca6/f058b/4.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/70b137fbfef1db79692ba7ee23c8fca6/c26ae/4.png 158w,
+/hamzaghufran.dev/static/70b137fbfef1db79692ba7ee23c8fca6/6bdcf/4.png 315w,
+/hamzaghufran.dev/static/70b137fbfef1db79692ba7ee23c8fca6/f058b/4.png 630w,
+/hamzaghufran.dev/static/70b137fbfef1db79692ba7ee23c8fca6/40601/4.png 945w,
+/hamzaghufran.dev/static/70b137fbfef1db79692ba7ee23c8fca6/78612/4.png 1260w,
+/hamzaghufran.dev/static/70b137fbfef1db79692ba7ee23c8fca6/9aaee/4.png 2608w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Take out your inspect tool and let’s compare our structure properties.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 462px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/cb78c4d46347175157e6a2ccd67feb9f/e389b/alpha.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 81.64556962025317%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAADN0lEQVQ4y6WU7U9TZxjG+2+4idDSF1iWLJnbh4W3WSPugxvgAlJeMnRDzDIVSm1Lhb7hpCDLYFTjajAYYHRAXaUUEKg9h9LOyJgOE+ayLZvzg/Ov+C3nOXQrhm/78Mu57ut+cuU5537OoyksLMSg12Mw/D/0egUDGkXkF+h49YCWvHydYP8BraizCC9/t/cyWp1OBGvy8rXUHnkL10eHOF9XQntdCfaGMhyN5TiaynE1V2CtL6WzvhRnU/m/KD1ljbO5gp4WM+Vvv45Wp0ezb38BjuZ3mb9cS8j5IZM+C8ngKaTgKZa/bCExfJLvAk1EA01CLw+1sLLD6vBJlgYbWR6oo8Z8EK3eiOaVvALaT5SxELDwONbNZtSJPN7Bgxk7zyQ/fyX9/HrXzZ8Jn9BP7/n+Y+0SmYlOIp5qqg69iU5vUgM76tXAn+PdbMa7WIrYkGIOfpK9bK152Vjt4WHSw5bsFZ7Co6SHZ5leNsI2bntrqDLnBFotZSwNNPBk/iKPM71Mr1zk2q1PGR49zc2ZdibudDIVv8BC2s2c5CKWcnNH9vDb+iU2wzai/hqqzQezgVqxw0hvHVvRLn6UvEwv2Lg+8wVD0WkGJm8wGL7JYHiUodkxgrFZphYvc3vJzhPZz/0JK5OuD3YHtp8oJeyp5WHEyWbSSzhm5VrkOgMxGd/ELO5bYbzjM4JANMnYXD/huQ62JT+Z8Q7G7Md2f0NrfRl3rzTwS7ybRykf8xkv8ykP0aSbeNrPN/EuwgsuoVXPQ3zdw+/p7Csf32Mo/Ra2Yy62JQ9yoof1pEpacrMSd5BYdJKWdvx7Pcgr3fyR8rMx1akOZa8pby/6ePGgn+eZPp5/HxD8fT/AU/lzVe94gkwfL364wsa3TnFsqrNT3pdXwIXGChKDFlaDH5MKnWHt6zbWQm3imQq1sRxsZfVqq+jJub0bZ8RBX+yr5fjhnYOt/IefVL3DqP19hs9WMnK2kq+yfFbJ1fNH6Ws1C4Lnjgp/JKc/cu49QrZjVJa8QaHBhEbcNgY9JqMBk8lAkclIkSmr1fq1IiPFRUaxRu0bRV9gVFFyiouL1dtGKbLocnSut5f/8hol8B/xnM/QtYEoOQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;alpha&quot; title=&quot;alpha&quot; src=&quot;/hamzaghufran.dev/static/cb78c4d46347175157e6a2ccd67feb9f/e389b/alpha.png&quot; srcset=&quot;/hamzaghufran.dev/static/cb78c4d46347175157e6a2ccd67feb9f/c26ae/alpha.png 158w,
+/hamzaghufran.dev/static/cb78c4d46347175157e6a2ccd67feb9f/6bdcf/alpha.png 315w,
+/hamzaghufran.dev/static/cb78c4d46347175157e6a2ccd67feb9f/e389b/alpha.png 462w&quot; sizes=&quot;(max-width: 462px) 100vw, 462px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 458px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/c3938f3b8e8890c747154f8f811f6029/f7a31/beta.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 82.27848101265823%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAADNElEQVQ4y6WU7U9bZRjG+3dMoPTdyjQx0ZiYMLrNbRjjlrnJxmDdYAZ0H5zNgL6tPT20zlrwZVsKI7jA3FwLVGihtB0FToECCqRBM1/CNNFh4ss/8TPntAzY4ic//HJf57qfXB/u5zm3SqfTodfrMezE8AT/5e9Ar9dhMBhQyWHqSi3lag1qjbaktylTa6moLFKm3t0roqGsQoNGoy0Gyob1jVcQmg9wub6a9vpq3NYarpyz4DlnQWjaj71hH47GfXjPWx7jKfW95/cTaDnEoVdfQKszoNpTXol44SCJwEn6XSeJBBrIhd8hF75A9loTM9ebiYesJEJWZm40K94W09ebyXSfZbrrFPW1L6PRG1E9U6HBedZCOnSGn9ICa2N25u7YWI3Z+WPOz2auk1+mvPw+Kyr6kdTJpiRXkc2FAN9GOxgTj1N3eEeg22ohFWpgI+NhddJBZrSNXNLBes7H+pyPlayHguRVtEJOoCAJPFr0UxjpIN75FqeO7AiU53W/q5GNtIfvFv1Ep1yEBy9y7VYrAzEbdxOXuZdsJ73sYzznZmLBS3xOYCPvZ33Ezrj/BKd3BjqtNYwGTvPDhJs1ycdQqo2bsc/4fGyIq4NhPhka4NPhQbq+6uNGYoRIOshopoMfcyKr0XYiV47tDnQ01hAV6/g+4WJVEohM2AiP9hNMzOLsG8R3ZxjxbkzRV0dnGBjvJpqw8UASWYm0cdvxJnWHX9o9w/vdjTzMeCksiCSXfCTnBeKSQGopwL2kk2jKpWjZm8wLJPM+Hi76WY/ZmQic2D1DV+lSfk65eSAJSDMeFqQiecnD1KSd6bSDfK7kz3rIZT38Oi9SGG5/+lK2Ajeyfv5e+Zg/l4P8tRws1m+C/Db/4W5Prksf8c9aF4Wv3cTF49sz3FOuwdt0gGx3PbM9LeS/eI+F/m3k7+neFmZutj7du3WRrPy4g29zRn7YOiMq+T98v66aL51H6blUS+8HRXouHVHos9USaj1I17uvKfpxv3Sm1/Y6t51HOWZ5Ea3ehEreNiajgapnjVSZTex9zqTULfaaTTxfte3L9ckzVWajsm3MZnNx28ihWu3/RasE/guiG9QWrMCOggAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;beta&quot; title=&quot;beta&quot; src=&quot;/hamzaghufran.dev/static/c3938f3b8e8890c747154f8f811f6029/f7a31/beta.png&quot; srcset=&quot;/hamzaghufran.dev/static/c3938f3b8e8890c747154f8f811f6029/c26ae/beta.png 158w,
+/hamzaghufran.dev/static/c3938f3b8e8890c747154f8f811f6029/6bdcf/beta.png 315w,
+/hamzaghufran.dev/static/c3938f3b8e8890c747154f8f811f6029/f7a31/beta.png 458w&quot; sizes=&quot;(max-width: 458px) 100vw, 458px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Alpha’s and Beta’s box models respectively.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Now do you see it?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;” I am not sure”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Even though your width &amp;#x26; height is set to 100px, the actual width &amp;#x26; height will be much different.
+Going back to our formula:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Beta&apos;s dimensions:
+width &amp;amp; height = 10px + 1px + 10px + 100px + 10px + 1px + 10px =&gt; 142px&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Alpha&apos;s dimensions:
+width &amp;amp; height = 10px + 1px + 10px + 78px + 10px + 1px + 10px =&gt; 120px&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“So Beta, while structuring myself I have taken into account the following properties: border, padding, and margin”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Now probably you are thinking about having to use the calculator every time while structuring yourself, well you can but there is another solution to that or you can say the right way to deal with the problem”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;An important property that’s connected to the box model is the &lt;code class=&quot;language-text&quot;&gt;box-sizing&lt;/code&gt; property.&lt;/p&gt;
+&lt;p&gt;The box-sizing property defines how the height and width of the element are calculated and if it should include the border and padding.&lt;/p&gt;
+&lt;p&gt;By default each element has &lt;code class=&quot;language-text&quot;&gt;box-sizing: content-box&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;The evolution of Beta&lt;/h2&gt;
+&lt;p&gt;Alpha lifts the curtain:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 526px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/c463a12136185c3cb2c5635c37f2dc34/2d7ab/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABhklEQVQoz4WS227iMABE+YetRBzHCQm2EwK5EmgaKloWqmq16j7u///JWcVCbIVoeRh55MvYM+OJ0RqzWDHfHFCJQXpTfG+KFB6+7yODAF8GCCkJlCIMQ5RSDiO/xsQYQzzXmGpL1j6S1WvK3StZs6EoKwqraRaWbplh58mXQhdBay1RGGLyFfX+RPf2Qf/xl+37H+puQ7uwvLYFx67CzuObgp/nLoLL7Y5yd6DZH2ked2RpyvThB0IIhAx48ISzPdqXgXJ8jEN9iuG/4GxGqBSr7UD78xfr02/Kpz31/uhiKFLDqavoi5yXtqDKDId1QV8uiZPkxgujCJtm2LJl0WxcjjpfOW6LmihU1AvL0mqqzLos13lKZjRxfCU4lhJFIWXTMrM5UkyRviCQ/mUcD4y2/XPjwT3LWmuXled5eEKgVPhtk/dLiSLapuZ5NzAMA3Ec3/0eX36b0fJIynbDsD/Q970TDM52buG7tYm1KXVVoZsn4ub53FrgXn2N8eIkSRxGfmvPPzKoNrIpszH5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/c463a12136185c3cb2c5635c37f2dc34/2d7ab/5.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/c463a12136185c3cb2c5635c37f2dc34/c26ae/5.png 158w,
+/hamzaghufran.dev/static/c463a12136185c3cb2c5635c37f2dc34/6bdcf/5.png 315w,
+/hamzaghufran.dev/static/c463a12136185c3cb2c5635c37f2dc34/2d7ab/5.png 526w&quot;
+        sizes=&quot;(max-width: 526px) 100vw, 526px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“What the hell! Is that it!!? Let me add that”&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.beta&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; inline-block&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; whitesmoke&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 10px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 10px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px solid&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/* The secret to becoming Alpha*/&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;box-sizing&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; border-box&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you set &lt;code class=&quot;language-text&quot;&gt;box-sizing: border-box;&lt;/code&gt; on an element, padding and border are included in the width and height&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/80226889a53a0734f0f5d881379829d0/3996e/6.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 53.79746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA80lEQVQoz62T2YrDMAxF8/+fFQh5zBfkLWTf942oHINbdaalZZiAsKJrHTmW4lzXJTx2/cujGY4OHMch+77Ltm1Pho6haR2fHM1wNCxJEimKQqqqkqZppK5ryfPc+F3X/dLLspQ0TWVZlscJLXBdV7NhHEfxfV88z5MwDM1m4kDQgLquK0EQGA1w3/evgVSfpslUjaLoXoCV07Zta5LjODZg9hIfhuE9cJ5nU5l3fAvkJACtjuF/BFIViDZ7ZwC1/hXQVtZmP5nGaJ0c4i/vkC5zd0C12S6ThA7cavhZlj13Wc/QeZ73WdP2cw61vZ3D//pTbr31VbeZPzDBAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;6&quot; title=&quot;6&quot; src=&quot;/hamzaghufran.dev/static/80226889a53a0734f0f5d881379829d0/f058b/6.png&quot; srcset=&quot;/hamzaghufran.dev/static/80226889a53a0734f0f5d881379829d0/c26ae/6.png 158w,
+/hamzaghufran.dev/static/80226889a53a0734f0f5d881379829d0/6bdcf/6.png 315w,
+/hamzaghufran.dev/static/80226889a53a0734f0f5d881379829d0/f058b/6.png 630w,
+/hamzaghufran.dev/static/80226889a53a0734f0f5d881379829d0/3996e/6.png 648w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;h2&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;It is often useful to set box-sizing to border-box to layout elements. This makes dealing with the sizes of elements much easier, and generally eliminates a number of pitfalls you can stumble on while laying out your content.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Applying box-sizing: border-box to an element changes the box model to a more predictable behavior. Setting height or width will control the size of the entire element, including its padding and border.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If you have ever been creating a page layout for the web and found yourself doing all kinds of math to figure out how wide or tall you can make things and have them behave properly on the page, then you have encountered what it means to deal with the box model. It is important to understand how margins, borders, padding, and content all work together to create the layout of elements on the page.&lt;/em&gt;&lt;/p&gt;
+&lt;h1&gt;The Position and Z-Index property&lt;/h1&gt;
+&lt;p&gt;Alpha had finally found his apprentice. Time for him to pass down his &lt;code class=&quot;language-text&quot;&gt;alpha knowledge&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Position Property&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Alpha&lt;/strong&gt;: &lt;em&gt;“Beta, are you familiar with position properties ?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta&lt;/strong&gt;: &lt;em&gt;“Naah!”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;So listen carefully:&lt;/p&gt;
+&lt;p&gt;In our world of the document, whenever an element is inserted/added to this document &lt;code class=&quot;language-text&quot;&gt;position: static&lt;/code&gt; is set as the &lt;strong&gt;default&lt;/strong&gt; position property.&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/bae1c413a09b20376cb76d3ddaea2395/c8e86/2-2.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 106.32911392405065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAAD3UlEQVQ4y3WUa29UVRSG5ycYkyoJvc2c+/1+5tIZOm3pJVWgarChEhIIaOK9VWK0Kk1QE01MMJFWit8aETHRKGKiBgUpFkOsYtFP8lses/e001rhw5u19zlZz3nXWvvsQhAmuF6IiFGcyRiGCUmSE8UpfhDJfRBEUlONQR7anTM6XCNOq+weHsUPYvJyjVpfg4JI6m8O4fkhD+7YQU9viZ3dJe67vwPNcEnyOm6QEWd9eFGZkuqQV+rU6v3s6h+kOTBErdaQpgS4kGY5g0PDBGFER8cD+LbOxEiFRtnmkfEmLz9zkKcPP8b0Uwd49sh+Du0f4bljk0w9Os7AwCC7+gfo62vguL40VbAsi+7ubjRVoau3xEQz4MbZY/x97W0ufjHDj9/MsPzDK9z46VVuXpvl95WT/PP9LB8f34OhFunu6aVYLKIqCqqqUrBtG0VR0DSVrp4S+5ohV04fZfXnORa/nOOdpTO898lp3r+wyMLFs3x9eZbb384yP7MXx9JRFBVNVSXsrsCJZsjV+aPcvDLH0ndv8dGls5y68AGnPv+QM5fm+WoduPDSXhxTo7TuTDAcx7k78Prik9z59V1Wl0/w18obrF59jVvLr7P2y5usrZzkzuUTLB7fh70N6Pv+JlDXNDp7ijw+nHJ94TB/fjbD2qcvcvv8DL8tvcAf58R6mrXz09w69zxLsxOy5FJpO9CyUEolOZTe3iLVyObInjJTIylPjKYcHMuYHE44IPZjGVOjKYfGMyZHUgytBfoP0HJciqqGohtopkVRM9lZ1OksbaprmzqLrVgSeUoL1gbm9SZj4w/T6B9E0Qw03UQ3rE2ZdluaYcqPGpZF0fDor+iMDbR+jEa9ThzHFMI0J6o18MtV9CBuKRQxasnx0CwX1XRwwwTLC9AsB9Xy8F2DwLPw/QDP8wjDkILtOGhxhJElmOkWJbGUbtvoui77lKYpruu2hiifCWntMxgEAQXX82SilSYtiXWettZRhGEYUpqmyZLyvEySpJim2X63IQkUh1EXDsMAYyNGIbptoem6BAkJV1EUUa1WqVSq0uHGuw1JoOf72HmKnaXYwpXjYNo2pmFsat2N6FG1VkPkiGfbJXsoRi1gTpbh5C3ZcYTtudieJ2XZtgQmSUKlUpHJ4lLZLgkUC1Hi1kGYcYSZZ5jp+mAMQ5YsgKKPYgD3LNkyLTkAu5JjRpGM7eEIib6aprxRsiyTx0MkC+DWgYh9ayi2g5OluH1VnDTBKefr+1p7LZ6LMsWxyctl6bRcqSDugf+VLP5lKwplH63A3+Ks5c50XTkY4SCMIgkSTu51bP4FGvrHdJxgXZ8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;2 2&quot; title=&quot;2 2&quot; src=&quot;/hamzaghufran.dev/static/bae1c413a09b20376cb76d3ddaea2395/f058b/2-2.png&quot; srcset=&quot;/hamzaghufran.dev/static/bae1c413a09b20376cb76d3ddaea2395/c26ae/2-2.png 158w,
+/hamzaghufran.dev/static/bae1c413a09b20376cb76d3ddaea2395/6bdcf/2-2.png 315w,
+/hamzaghufran.dev/static/bae1c413a09b20376cb76d3ddaea2395/f058b/2-2.png 630w,
+/hamzaghufran.dev/static/bae1c413a09b20376cb76d3ddaea2395/c8e86/2-2.png 758w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;p&gt;Basically what it does is, it tells the element to follow the other elements in the document flow. In other words, the element will stick to the normal page flow.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;1&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;2&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;3&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;div 1 will always be rendered &lt;strong&gt;above&lt;/strong&gt; 2 and so on, you get it!!. This flow is what we are mainly used to.&lt;/p&gt;
+&lt;p&gt;But there is a catch, the following properties will never have any effect on an element having &lt;strong&gt;static as the positioning property&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-tricks.com/almanac/properties/l/left/&quot;&gt;left&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-tricks.com/almanac/properties/r/right/&quot;&gt;right&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-tricks.com/almanac/properties/t/top/&quot;&gt;top&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-tricks.com/almanac/properties/b/bottom/&quot;&gt;bottom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-tricks.com/almanac/properties/z/z-index/&quot;&gt;z-index&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Introducing &lt;code class=&quot;language-text&quot;&gt;position: relative&lt;/code&gt; property&lt;/h4&gt;
+&lt;p&gt;This acts exactly like the static positioning property but, it does react to the above-listed CSS properties.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;” Let’s go to (within) the playground and try out these spells”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Playground&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.playground&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 64px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/** Position set as relative to help map the Playground text to the top [Read about: position absolute]*/&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; relative&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px solid grey&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; inline-block&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #f7f7f7&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Alpha &amp;#x26; Beta both set their position properties as &lt;code class=&quot;language-text&quot;&gt;relative&lt;/code&gt;&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/4f1961b2ef7cb02a6e270831817684b3/4ef49/2-3.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 67.72151898734178%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABKklEQVQ4y6WT2YqDUBBE/f/PUwRRUHxw17hrEKHDudBBZ4xkmIdKbi9V7S1bqyxLieNYsiyTNE2lbVtZ11XmeZZlWb4G/fAsRGzbFs/zxPd9qev63fAXTNMk4ziKheq+729s2ybP59NM4/8KxxpnwEMgavGj1+PcdZ0Mw3CKmQz0TK3vexPrVU+CBEx7PB6Cp/jpOI5EUSRN05gc1mBHGIbiuq5UVSVFUZg63I+CPB3T8TNJEpOHlOe56UMkCAJDpg/OrSDgCnipb1sFGUYfNTjafyvI2hDjldZUkBwD1Ed6bwUh0qAkFcA7fOWKuh7k6b31kIkQMZwXAfCMmCekpnlyxHAuBYHul+7WEVd5zSn/JHhc0CvBq/xP3q/F/g/Ud0vX49Nn9i101V5KDTP2bp9luAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;2 3&quot; title=&quot;2 3&quot; src=&quot;/hamzaghufran.dev/static/4f1961b2ef7cb02a6e270831817684b3/f058b/2-3.png&quot; srcset=&quot;/hamzaghufran.dev/static/4f1961b2ef7cb02a6e270831817684b3/c26ae/2-3.png 158w,
+/hamzaghufran.dev/static/4f1961b2ef7cb02a6e270831817684b3/6bdcf/2-3.png 315w,
+/hamzaghufran.dev/static/4f1961b2ef7cb02a6e270831817684b3/f058b/2-3.png 630w,
+/hamzaghufran.dev/static/4f1961b2ef7cb02a6e270831817684b3/4ef49/2-3.png 890w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“You feel no difference, right?”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“Yup, all the same”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Alright, try this spell - &lt;code class=&quot;language-text&quot;&gt;z-index: -1&lt;/code&gt;”&lt;/em&gt;&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/296711d8e1c41c721cb442c7c61cad50/3f3b9/2-4.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA0ElEQVQ4y62TzQ6EIAyEef/H00QvehFjRMNF8f8wmyHpBt1sVlcPEwstX8G2yhiDKIqQpimyLEPbtliWBeM4YpqmS+r7HooHt23zkHVdMc+zd3I/hMr6m95A59zOwfUwDD4Bg2jLgWOSMNkOKI6u66C1Rl3XiOMYeZ6jaRpUVfU/0FrrHUmSoCgKH0xoeMvTQG6wKAyQJ9P/CJA2fY8Aw2LcfnJZlh5KiIhFulwUCebNjvrVgx9AaWaK9lFnpoRxZCn5+fzeERlsOyVj94Q4ui8XR+u6Wt9gfQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;2 4&quot; title=&quot;2 4&quot; src=&quot;/hamzaghufran.dev/static/296711d8e1c41c721cb442c7c61cad50/f058b/2-4.png&quot; srcset=&quot;/hamzaghufran.dev/static/296711d8e1c41c721cb442c7c61cad50/c26ae/2-4.png 158w,
+/hamzaghufran.dev/static/296711d8e1c41c721cb442c7c61cad50/6bdcf/2-4.png 315w,
+/hamzaghufran.dev/static/296711d8e1c41c721cb442c7c61cad50/f058b/2-4.png 630w,
+/hamzaghufran.dev/static/296711d8e1c41c721cb442c7c61cad50/3f3b9/2-4.png 870w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;” WAY NO!!! I am invisible”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;” Not exactly, you’re just below the playground now, or I may say, the playground is over you, ;)”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Reset &lt;code class=&quot;language-text&quot;&gt;z-index: 0&lt;/code&gt; now. Moving ahead, similarly, by altering my &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt; &amp;#x26; &lt;code class=&quot;language-text&quot;&gt;z-index&lt;/code&gt; property, I can place myself above you”&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.alpha&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   ...
+    &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; relative&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 142px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;.beta&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; relative&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/b0b19195699cbfb6499eab3a0e0810b9/38af3/2-5.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA4klEQVQ4y6VTSQ6EMAzr/78HF8SFC4h93wQHj1wpKGKKZoCDmzZtjXFSU5YlfN9HGIYIggB5nmOeZ4zjeAvDMGDbNpiu6xBFEeI4RpIkaNsWy7Jgmqa/QQGMvGc4kHnfdxvXdbUbZ7jyOkdSro2wMwrkgF7TGtpRVZVFURQ2J8q+CCWpFWjCLMvsOfrteR76vrfEtIxE3LtFSHU81zSNJeL8NSGrqQvxiFAiPZMPyOW6rp8rZEtJQQiSpWn6m9AF7rE/XdB/cRCelV31oQvOPqTZV+q0b1evRPtqOOjqvQHf8gcYNurfuOwQRgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;2 5&quot; title=&quot;2 5&quot; src=&quot;/hamzaghufran.dev/static/b0b19195699cbfb6499eab3a0e0810b9/f058b/2-5.png&quot; srcset=&quot;/hamzaghufran.dev/static/b0b19195699cbfb6499eab3a0e0810b9/c26ae/2-5.png 158w,
+/hamzaghufran.dev/static/b0b19195699cbfb6499eab3a0e0810b9/6bdcf/2-5.png 315w,
+/hamzaghufran.dev/static/b0b19195699cbfb6499eab3a0e0810b9/f058b/2-5.png 630w,
+/hamzaghufran.dev/static/b0b19195699cbfb6499eab3a0e0810b9/38af3/2-5.png 894w&quot; sizes=&quot;(max-width: 630px) 100vw, 630px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“So this is how they design their pretty websites with there pretty png(s) floating on top of each other, hmm..”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Well… Another spell exist which can make you transcend this document flow, and you can chill anywhere on the page while having your feet planted withing a container”&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;Introducing &lt;code class=&quot;language-text&quot;&gt;position: absolute&lt;/code&gt; property&lt;/h4&gt;
+&lt;p&gt;In this case, the property completely removes the element from the document flow and everything renders as if that document did not exist at all.&lt;/p&gt;
+&lt;p&gt;This is extremely helpful when you want to stick the element in someplace and don’t want anything around it to be affected by its presence.&lt;/p&gt;
+&lt;p&gt;Going back to the playground…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.playground&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 64px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin-top&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px solid grey&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; inline-block&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; #f7f7f7&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;/** Position relative removed*/&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Try this spell &lt;code class=&quot;language-text&quot;&gt;position: absolute&lt;/code&gt;”&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.beta&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  ...
+  &lt;span class=&quot;token property&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 10px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; absolute&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/8dcb28e57be464d86eeea69e9e623f8a/2c960/2-6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 35.44303797468354%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAgklEQVQoz6WRiQrEIAxE8/+/quCFiucsKbikxXYXOjAEYnxJlJRSYNda0XtHa+2VKYQA9hgDO3GjUsrXc048iRjE5sKdc84wxkBrjZTSsQXrrp4kfXWXkYHOOVhrD+Da5G5SknTZWQL5Sbz3iDGeJtwCd0kJXB+14nWLv4BPF36dfQCZZCm9ixNDoAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/8dcb28e57be464d86eeea69e9e623f8a/f058b/2-6.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/8dcb28e57be464d86eeea69e9e623f8a/c26ae/2-6.png 158w,
+/hamzaghufran.dev/static/8dcb28e57be464d86eeea69e9e623f8a/6bdcf/2-6.png 315w,
+/hamzaghufran.dev/static/8dcb28e57be464d86eeea69e9e623f8a/f058b/2-6.png 630w,
+/hamzaghufran.dev/static/8dcb28e57be464d86eeea69e9e623f8a/40601/2-6.png 945w,
+/hamzaghufran.dev/static/8dcb28e57be464d86eeea69e9e623f8a/78612/2-6.png 1260w,
+/hamzaghufran.dev/static/8dcb28e57be464d86eeea69e9e623f8a/2c960/2-6.png 2870w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“I have completely escaped from the playground, how is that-? Should I not be placed on the top left corner like how the playground text was placed. Since I have top &amp;#x26; left set to 0”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Incorrect, the absolute property makes the element respond not to the dimensions of its parent (playground), but the document itself:”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;”So how do I make myself positioned absolutely from my parent element (playground)”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“You set the parent (playground) as &lt;code class=&quot;language-text&quot;&gt;position: relative&lt;/code&gt;”&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.playground&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  ...
+  &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; relative&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/bf3bec8f795c4de7c8325b8230ff3301/60ab9/2-7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36.075949367088604%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAZElEQVQoz63RuwrAMAgF0Pz/p4aQ94sM3qJDKSXNYoWLDnIGNdgUEd19l+fOu8wJHGPAWouUkswcFVhrRYwRzjl479F714EMMBRCELi1pgPXWiilIOcs+QXku805Jeobnj78BV6BpCo7qK+2FwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/bf3bec8f795c4de7c8325b8230ff3301/f058b/2-7.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/bf3bec8f795c4de7c8325b8230ff3301/c26ae/2-7.png 158w,
+/hamzaghufran.dev/static/bf3bec8f795c4de7c8325b8230ff3301/6bdcf/2-7.png 315w,
+/hamzaghufran.dev/static/bf3bec8f795c4de7c8325b8230ff3301/f058b/2-7.png 630w,
+/hamzaghufran.dev/static/bf3bec8f795c4de7c8325b8230ff3301/40601/2-7.png 945w,
+/hamzaghufran.dev/static/bf3bec8f795c4de7c8325b8230ff3301/78612/2-7.png 1260w,
+/hamzaghufran.dev/static/bf3bec8f795c4de7c8325b8230ff3301/60ab9/2-7.png 2450w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“Now that you’ve got a sense of this, let’s explore further”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; zZ 😴&lt;/p&gt;
+&lt;h4&gt;Introducing &lt;code class=&quot;language-text&quot;&gt;position: fixed&lt;/code&gt; &amp;#x26; &lt;code class=&quot;language-text&quot;&gt;position: sticky&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;“You see these users, scrolling all day long, Don’t you wanna just stick to their screen and irritate them!!”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“We can do that..”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-text&quot;&gt;fixed&lt;/code&gt; value is similar to &lt;code class=&quot;language-text&quot;&gt;absolute&lt;/code&gt; as it can help you position an element anywhere relative to the document. This value is unaffected by scrolling.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.beta&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  ...
+  &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; fixed&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/hamzaghufran.dev/d9d687abcaa765ecbda80c932e876264/2-8.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“Bumpy Ride”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; “It only lacks the surprise element. I mean, as soon as the user starts scrolling, the element scrolls along”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; ”&lt;em&gt;Do you think we can achieve something like&lt;/em&gt;: &lt;strong&gt;&lt;em&gt;once a user has scrolled past a certain point in the viewport, fix the position of the element to that location so it remains persistently displayed like an element with a &lt;code class=&quot;language-text&quot;&gt;fixed&lt;/code&gt; value.&lt;/em&gt;&lt;/strong&gt;”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beta:&lt;/strong&gt; &lt;em&gt;“Sticky…easy guess 😏 ”&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.beta{
+   ...
+   position: sticky;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Alpha:&lt;/strong&gt; &lt;em&gt;” Since you know that already and an easy guess as well would be that we also use this property to stick navbars to the screen while the user is scrolling, Let’s try something else with this. Write a spell which make you move within the playground when the user scrolls”’&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Assessing sticky position property to child elements can be tricky: Check &lt;a href=&quot;https://stackoverflow.com/questions/53131200/why-sticky-position-does-not-work-in-child-div&quot;&gt;this&lt;/a&gt; out.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.playground&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  ...
+  &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 200px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;.beta&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sticky&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 50px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/hamzaghufran.dev/9f6fd7579c3a1fcd217c42a008ad3c13/2-9.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The Beta element will be relatively positioned until the scroll location of the viewport reaches a point where the element will be &lt;code class=&quot;language-text&quot;&gt;50px&lt;/code&gt; from the top of the viewport. At that point, Beta becomes sticky and remains at a &lt;code class=&quot;language-text&quot;&gt;fixed&lt;/code&gt; position &lt;code class=&quot;language-text&quot;&gt;50px&lt;/code&gt; top of the screen.&lt;/p&gt;
+&lt;h3&gt;Wrapping Up&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Performance &amp;#x26; Accessibility&lt;/strong&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/position#:~:text=The%20position%20CSS%20property%20sets,final%20location%20of%20positioned%20elements.&quot;&gt;MDN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Scrolling elements containing &lt;code class=&quot;language-text&quot;&gt;fixed&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;sticky&lt;/code&gt; content can cause performance and accessibility issues. As a user scrolls, the browser must repaint the sticky or fixed content in a new location. Depending on the content needing to be repainted, the browser performance, and the device’s processing speed, the browser may not be able to manage repaints at 60 fps, causing accessibility concerns for people with sensitivities and jank for everyone. One solution is to add &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/will-change&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;will-change: transform&lt;/code&gt;&lt;/a&gt; to the positioned elements to render the element in its own layer, improving repaint speed and therefore improving performance and accessibility.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The display property]]></title><description><![CDATA[Often times when you are performing some repitive task, you get comfortable with what it is and fail to find a better - more optimal…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/div/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/div/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;p&gt;Often times when you are performing some repitive task, you get comfortable with what it is and fail to find a better - more optimal solution. Or, you overlook some very basic concepts and remain content with the outcome you produce.&lt;/p&gt;
+&lt;p&gt;I am at the end of my two year journey as a web developer and you might expect me to have the right answer when asked about the difference between div-inline, inline and block. I did not have the right answer up until NOW.&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display&lt;/code&gt; property.&lt;/h2&gt;
+&lt;p&gt;The display property specificies the display behavior of an element. It’s a must know for controlling the layout of an element.
+There’s a bunch of property values. By default the listed elements have &lt;code class=&quot;language-text&quot;&gt;block&lt;/code&gt; as their property value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;div&lt;/li&gt;
+&lt;li&gt;h1&lt;/li&gt;
+&lt;li&gt;p&lt;/li&gt;
+&lt;li&gt;li&lt;/li&gt;
+&lt;li&gt;section
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/e1250/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.18987341772153%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA4UlEQVQ4y62TcQuDIBDF+/5fsT8GQbS2otIyS+2NJ9SkZRuxg0dS3buf3pngz5HsXyzLsj1jin2/bHim5IxiX+TSlteYpgl932MYBmitoZTyatsW4ziiaRpkWYa6rpHnOYqieBMa6zAZBz1bLwYTu67zStMUZVl686qqMM8zjDG+AAuvxbwhk7Nnj9tD4t4qVELDugVSyi2BplyTlOuzI/CGzn2eG7dLkn2Q0lobbVwSGoUNIeGRIUlDw0PCow6TkAobwrUQ4rvh0YgwiecXisRUOKs/jc0vcxf75/JNiRG+AEZcA1FmBmwzAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/f058b/1.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/c26ae/1.png 158w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/6bdcf/1.png 315w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/f058b/1.png 630w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/40601/1.png 945w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/78612/1.png 1260w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/e1250/1.png 1786w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A block element starts from a new line and will occupy the whole width of it’s wrapping container.
+DIV2 above takes up the whole width.&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display:inline&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Now lets say that you want to place another div element next to DIV2.
+Lets do that:
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/92bb4/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.55696202531645%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA6klEQVQ4y61T7QqDMAz0/V9x+EdBUPzWamutNy6jmwxbhixwpKTt5dKkCf5syXfgOI63v4PkKosnvaXwKgvNOQdjjMBai23bBOu6Yt93KKXQtq34aZrEBxS+CP0FHi7LEn3fY1kW1HUte/M8y5rxoihQVdVLodIW/WzQEpOG3nbZ4AVPkmUZmqYRoq7rgk8iCknyKAbktQLJnfsoHIZBfJqmyPNcElA1S75qnCg01oE4pXkTsly+IVWN4wittSg/E0bH5pyJpRLfxliUMNRldtZ3j96vCU7ATwp/He7YrEZ/SshiZ25/vRDhE5a8AZySCzA8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/f058b/2.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/c26ae/2.png 158w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/6bdcf/2.png 315w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/f058b/2.png 630w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/40601/2.png 945w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/78612/2.png 1260w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/92bb4/2.png 1824w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Tada, that won’t work.
+Let’s assign a &lt;code class=&quot;language-text&quot;&gt;class=&apos;inline-elm&apos;&lt;/code&gt; to both DIV2 and DIV3 and add the following css property:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;inline-elm{
+   display:&apos;inline&apos;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/df88b/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA50lEQVQoz61T2W6EMBDj/7+Qh8JDC1Scgk0COfFqps0KaQkSVUeyJqfjiZMM/xzZ2eC+7698F1nqpEh6W2HqJIoQAre999yOoD5BSgmtNWPbNp5LKPwhXJYFTdNgnmd0XYdhGND3PWdrLeq6xjRNvKaqKhhjkWnrMSvDGIWG0g4+BCYkojzP0bYtiqJAWZa8eV3XdMmrcfj4fqAeFb4Gic9fjMJAKcllHIOURcJTU5wPIJVHM0LYuWghBBMcTXLO8X2ljLu8w0gYjaFM/UvCK5fJPXJSKfXKBGPMXYXvj/ts/E8/5e78E1qOsoEydWqOAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/f058b/3.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/c26ae/3.png 158w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/6bdcf/3.png 315w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/f058b/3.png 630w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/40601/3.png 945w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/78612/3.png 1260w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/df88b/3.png 1906w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The inline property displays an element as an inline element. In other words, inline elements do NOT start on a new line and only take up as much width as its content.&lt;/p&gt;
+&lt;p&gt;As much width as its content ?
+Let me explain: Using div as a button type component.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn{
+    display:&apos;inline&apos;
+    border:&apos;1px solid black&apos;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/3c051/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.278481012658226%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAlklEQVQY062PUQrDIBBEvf9FPEjwDIn5MBBEghAJMQqCOmU39Kf0K+3C8GBcnVHgzyNKKYgxgnhdF3LOrPM8mXRGPvE4DvZTSqi1orUG5xystdi2Db13iH3fMc8zQggYxxHLssB7D601jDGsdV354jRNvEs7FEYzDAOklFBK3Q1/+R41okLUkMgPkvlU3wLE02Zvfga8AD8P0vCQNQnZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/f058b/4.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/c26ae/4.png 158w,
+/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/6bdcf/4.png 315w,
+/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/f058b/4.png 630w,
+/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/3c051/4.png 760w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You don’t like that.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/e9beb/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA90lEQVQoz6VSuYqEUBD0/z/C3EBMzM29EPEMZMADg0k98KylmnWYEYVZtqF4bVvdr17RCn5j3/fX+S3e+45QcIoz4S7ueModaV1XDMMgGMcRy7IIWCfeX3M58PjB5jAM4fs+Ho8HmqbB8/mUvCgKQVmWH0M/Bp49oQrTNKGqKmzbhuu6CIIAmqbBMAzoui6XnT0/8ksP53kWBX3fC7quE+Wsb9v2UnfVq5BEUNkxiJimSZpJ4klwKOvk0lvmBPsOlUqSJMjzHG3bwnEcZFkmfqVpiiiK5JtPrqoKnuehrmuBZVliSRzH4jkvuFyb/4Q8+S+L/M2i/wCFdQayEsYKnAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/f058b/5.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/c26ae/5.png 158w,
+/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/6bdcf/5.png 315w,
+/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/f058b/5.png 630w,
+/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/e9beb/5.png 730w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;YES I KNOW, this is the content, an &lt;code class=&quot;language-text&quot;&gt;inline&lt;/code&gt; element will acquire as much width as its content. Hope it’s clear now.
+To fix this, can we do something like this ?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn {
+  display: inline;
+  width: 100px; /* ❌ won&apos;t have any effect */
+  height: 100px; /* ❌ won&apos;t have any effect */
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;No we can’t, width and height property has no effect on inline elements.
+How to solve this now ?&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display:inline-block&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Introducing &lt;code class=&quot;language-text&quot;&gt;inline-block&lt;/code&gt;. Displays an element as an inline-level block container. You CAN set height and width values.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn {
+  display: inline-block;
+  width: 100px; /* ✅  yes, it will work */
+  height: 100px; /* ✅  yes, it will work */
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It’s essentially the same thing as inline, except that you can set height and width values.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/ef6b9/6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.68354430379746%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABLklEQVQ4y61UyYqDQBD1/z/Fswf/QcxBvLmiBxH3Je5a4RU0Y9TJIJOCSnxq3tJdHYm+XBI+tm273eu6vmHBIwnw3xI87HAcR3Ich4qiIM/zKAxDiqKIr4MgINd1Gdu2TWma8v3H48H3fd+naZp+HIqLuq5pGAYqy5K6rqN5nqlpGur7ntq2Zfx8PhnjOcTxHP0xMtSyLGOXcRxzAydJwt8gqqrqFPct8n5x4QIxZVkmTdOY2DAMUlWVFEUhy7LY5bIsl+soHRUQGfGwi/gRGhjOxVpheVAQ1nWdTNNkIyeHKES6Ut8XIkNQiIoRuiSEQ7zwqeDw6p3LyFDHbgMLdRFdYOysIDwO94kQZHmeswuQo+F6v8MYo/2onI7ecdrvno5fz/Ldc/2nw2/827wA6rOXCOLoDDMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/f058b/6.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/c26ae/6.png 158w,
+/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/6bdcf/6.png 315w,
+/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/f058b/6.png 630w,
+/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/ef6b9/6.png 832w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Explained in Non-Dev terms: [Inspired from external source]&lt;/h2&gt;
+&lt;p&gt;Imagine if you’re at a movie theatre, you have rows of seats, right. If you assign your friend with an inline seat, they will sit next to you. So the thing with inline seats is that they all are the same physical chair. You can’t manipulate the chair to make it larger or smaller. One size fits all they call it!&lt;/p&gt;
+&lt;p&gt;Now your friend Charlie wants to join you, but because she is the daughter of the owner of the theatre. She gets assigned an inline-block seat. Well, she still gets to sit next to you. Cause she’s “inline” with you (bad pun, lol 😂) and of course you want her to sit next to you. However, because she is the daughter of the owner of the theatre, her mom wants to make sure she’s comfortable. So she gives her a special seat, where her chair is customized and can be adjusted to make it bigger or smaller. Nepotism at its finest 🤫&lt;/p&gt;
+&lt;p&gt;Your friend Jack is also attending the concert. Now your friend Charlie doesn’t really like him. So she tells her mom to assign him a block seat. That way Jack is not seated next to you. Instead he sits in the next row.&lt;/p&gt;
+&lt;h2&gt;To wrap it up&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/2e237/7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 106.32911392405065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB40lEQVQ4y62V2YoCQQxF/f+P8kF9cBdRQVQEFfd9381wAlfaqX4YcBpCKpXUzU1q6cTr9TI+9DcijIQG337CSGhwu93scrnY9Xp1YfwXOZ/Pdr/fPxk+n0/bbDa2Xq9tuVy+ZbVavecWi4XLbDaz6XTqMplM3GZtUDKLt9utMyWrWGLDIMr8dDp5DEJC7IAh2cmEE2BsaebFGHu/37sm2fF4dPsD8PF4vMsBsFAoWDqdtmKx6IzwUWImk3FpNpvOdrfb2eFw8MQfgJQEmMqGzXw+t/F47NnFVMCj0chjYQf7oIcwJJAAsgoEwWYewaZnaAAhQvIAEAeAKoGeIoAkk0nrdrtWqVQchEX4tCmsIUkAyBGAGYAKxqaf1WrVyuWyA2rXiVPJzMcyZEMIQksIwk9b5CcRrFRywJCsbAK9QbdaLev3+9br9axer9tgMLBOp2PD4dB1u932OKrQRgaAOncsyOfzlsvlXKdSKctms9ZoNKxWq1mpVPI5esqRApA+BiXLQWlxHz1TmTCjd5xF5mhDAIhD95kFaro2inMa9yrFXj3dFIEgjAGDNa1gHPcOUlns1aPJOv0Cib5AuprEYSsJ88GxYaCScUafr+hzpltBwt836A34H6/1x4v9H/+T6D/lB7JTVKPPhZWdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/f058b/7.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/c26ae/7.png 158w,
+/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/6bdcf/7.png 315w,
+/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/f058b/7.png 630w,
+/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/2e237/7.png 790w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
 &lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
 &lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
