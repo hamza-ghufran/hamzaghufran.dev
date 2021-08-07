@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Believer and Seeker`,
+    title: `Seeker`,
     author: {
       name: `Hamza Ghufran`,
-      summary: `Hands on Keyword, wondering what to create next.`,
+      summary: `Hands on keyboard, wondering what to create next.`,
     },
     description: `Words and Code`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
