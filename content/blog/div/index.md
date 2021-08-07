@@ -1,6 +1,6 @@
 ---
 
-title: Display: The display property
+title: The display property
 date: "22nd August 2020"
 description: "The display property"
 
