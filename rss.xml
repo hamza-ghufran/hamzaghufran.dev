@@ -1,278 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Seeker]]></title><description><![CDATA[Words and Code]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Aug 2021 20:17:58 GMT</lastBuildDate><item><title><![CDATA[The display property]]></title><description><![CDATA[Often times when you are performing some repitive task, you get comfortable with what it is and fail to find a better - more optimal…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/div/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/div/</guid><pubDate>Invalid Date</pubDate><content:encoded>&lt;p&gt;Often times when you are performing some repitive task, you get comfortable with what it is and fail to find a better - more optimal solution. Or, you overlook some very basic concepts and remain content with the outcome you produce.&lt;/p&gt;
-&lt;p&gt;I am at the end of my two year journey as a web developer and you might expect me to have the right answer when asked about the difference between div-inline, inline and block. I did not have the right answer up until NOW.&lt;/p&gt;
-&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display&lt;/code&gt; property.&lt;/h2&gt;
-&lt;p&gt;The display property specificies the display behavior of an element. It’s a must know for controlling the layout of an element.
-There’s a bunch of property values. By default the listed elements have &lt;code class=&quot;language-text&quot;&gt;block&lt;/code&gt; as their property value.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;div&lt;/li&gt;
-&lt;li&gt;h1&lt;/li&gt;
-&lt;li&gt;p&lt;/li&gt;
-&lt;li&gt;li&lt;/li&gt;
-&lt;li&gt;section
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/e1250/1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 65.18987341772153%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA4UlEQVQ4y62TcQuDIBDF+/5fsT8GQbS2otIyS+2NJ9SkZRuxg0dS3buf3pngz5HsXyzLsj1jin2/bHim5IxiX+TSlteYpgl932MYBmitoZTyatsW4ziiaRpkWYa6rpHnOYqieBMa6zAZBz1bLwYTu67zStMUZVl686qqMM8zjDG+AAuvxbwhk7Nnj9tD4t4qVELDugVSyi2BplyTlOuzI/CGzn2eG7dLkn2Q0lobbVwSGoUNIeGRIUlDw0PCow6TkAobwrUQ4rvh0YgwiecXisRUOKs/jc0vcxf75/JNiRG+AEZcA1FmBmwzAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Block&quot;
-        title=&quot;Block&quot;
-        src=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/f058b/1.png&quot;
-        srcset=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/c26ae/1.png 158w,
-/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/6bdcf/1.png 315w,
-/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/f058b/1.png 630w,
-/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/40601/1.png 945w,
-/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/78612/1.png 1260w,
-/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/e1250/1.png 1786w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A block element starts from a new line and will occupy the whole width of it’s wrapping container.
-DIV2 above takes up the whole width.&lt;/p&gt;
-&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display:inline&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Now lets say that you want to place another div element next to DIV2.
-Lets do that:
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/92bb4/2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.55696202531645%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA6klEQVQ4y61T7QqDMAz0/V9x+EdBUPzWamutNy6jmwxbhixwpKTt5dKkCf5syXfgOI63v4PkKosnvaXwKgvNOQdjjMBai23bBOu6Yt93KKXQtq34aZrEBxS+CP0FHi7LEn3fY1kW1HUte/M8y5rxoihQVdVLodIW/WzQEpOG3nbZ4AVPkmUZmqYRoq7rgk8iCknyKAbktQLJnfsoHIZBfJqmyPNcElA1S75qnCg01oE4pXkTsly+IVWN4wittSg/E0bH5pyJpRLfxliUMNRldtZ3j96vCU7ATwp/He7YrEZ/SshiZ25/vRDhE5a8AZySCzA8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Block&quot;
-        title=&quot;Block&quot;
-        src=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/f058b/2.png&quot;
-        srcset=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/c26ae/2.png 158w,
-/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/6bdcf/2.png 315w,
-/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/f058b/2.png 630w,
-/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/40601/2.png 945w,
-/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/78612/2.png 1260w,
-/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/92bb4/2.png 1824w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Tada, that won’t work.
-Let’s assign a &lt;code class=&quot;language-text&quot;&gt;class=&apos;inline-elm&apos;&lt;/code&gt; to both DIV2 and DIV3 and add the following css property:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;inline-elm{
-   display:&apos;inline&apos;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/df88b/3.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA50lEQVQoz61T2W6EMBDj/7+Qh8JDC1Scgk0COfFqps0KaQkSVUeyJqfjiZMM/xzZ2eC+7698F1nqpEh6W2HqJIoQAre999yOoD5BSgmtNWPbNp5LKPwhXJYFTdNgnmd0XYdhGND3PWdrLeq6xjRNvKaqKhhjkWnrMSvDGIWG0g4+BCYkojzP0bYtiqJAWZa8eV3XdMmrcfj4fqAeFb4Gic9fjMJAKcllHIOURcJTU5wPIJVHM0LYuWghBBMcTXLO8X2ljLu8w0gYjaFM/UvCK5fJPXJSKfXKBGPMXYXvj/ts/E8/5e78E1qOsoEydWqOAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Block&quot;
-        title=&quot;Block&quot;
-        src=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/f058b/3.png&quot;
-        srcset=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/c26ae/3.png 158w,
-/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/6bdcf/3.png 315w,
-/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/f058b/3.png 630w,
-/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/40601/3.png 945w,
-/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/78612/3.png 1260w,
-/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/df88b/3.png 1906w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;The inline property displays an element as an inline element. In other words, inline elements do NOT start on a new line and only take up as much width as its content.&lt;/p&gt;
-&lt;p&gt;As much width as its content ?
-Let me explain: Using div as a button type component.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn{
-    display:&apos;inline&apos;
-    border:&apos;1px solid black&apos;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/3c051/4.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 32.278481012658226%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAlklEQVQY062PUQrDIBBEvf9FPEjwDIn5MBBEghAJMQqCOmU39Kf0K+3C8GBcnVHgzyNKKYgxgnhdF3LOrPM8mXRGPvE4DvZTSqi1orUG5xystdi2Db13iH3fMc8zQggYxxHLssB7D601jDGsdV354jRNvEs7FEYzDAOklFBK3Q1/+R41okLUkMgPkvlU3wLE02Zvfga8AD8P0vCQNQnZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Block&quot;
-        title=&quot;Block&quot;
-        src=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/f058b/4.png&quot;
-        srcset=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/c26ae/4.png 158w,
-/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/6bdcf/4.png 315w,
-/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/f058b/4.png 630w,
-/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/3c051/4.png 760w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;You don’t like that.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/e9beb/5.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA90lEQVQoz6VSuYqEUBD0/z/C3EBMzM29EPEMZMADg0k98KylmnWYEYVZtqF4bVvdr17RCn5j3/fX+S3e+45QcIoz4S7ueModaV1XDMMgGMcRy7IIWCfeX3M58PjB5jAM4fs+Ho8HmqbB8/mUvCgKQVmWH0M/Bp49oQrTNKGqKmzbhuu6CIIAmqbBMAzoui6XnT0/8ksP53kWBX3fC7quE+Wsb9v2UnfVq5BEUNkxiJimSZpJ4klwKOvk0lvmBPsOlUqSJMjzHG3bwnEcZFkmfqVpiiiK5JtPrqoKnuehrmuBZVliSRzH4jkvuFyb/4Q8+S+L/M2i/wCFdQayEsYKnAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Block&quot;
-        title=&quot;Block&quot;
-        src=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/f058b/5.png&quot;
-        srcset=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/c26ae/5.png 158w,
-/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/6bdcf/5.png 315w,
-/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/f058b/5.png 630w,
-/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/e9beb/5.png 730w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;YES I KNOW, this is the content, an &lt;code class=&quot;language-text&quot;&gt;inline&lt;/code&gt; element will acquire as much width as its content. Hope it’s clear now.
-To fix this, can we do something like this ?&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn {
-  display: inline;
-  width: 100px; /* ❌ won&apos;t have any effect */
-  height: 100px; /* ❌ won&apos;t have any effect */
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;No we can’t, width and height property has no effect on inline elements.
-How to solve this now ?&lt;/p&gt;
-&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display:inline-block&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Introducing &lt;code class=&quot;language-text&quot;&gt;inline-block&lt;/code&gt;. Displays an element as an inline-level block container. You CAN set height and width values.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn {
-  display: inline-block;
-  width: 100px; /* ✅  yes, it will work */
-  height: 100px; /* ✅  yes, it will work */
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;It’s essentially the same thing as inline, except that you can set height and width values.
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/ef6b9/6.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 74.68354430379746%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABLklEQVQ4y61UyYqDQBD1/z/Fswf/QcxBvLmiBxH3Je5a4RU0Y9TJIJOCSnxq3tJdHYm+XBI+tm273eu6vmHBIwnw3xI87HAcR3Ich4qiIM/zKAxDiqKIr4MgINd1Gdu2TWma8v3H48H3fd+naZp+HIqLuq5pGAYqy5K6rqN5nqlpGur7ntq2Zfx8PhnjOcTxHP0xMtSyLGOXcRxzAydJwt8gqqrqFPct8n5x4QIxZVkmTdOY2DAMUlWVFEUhy7LY5bIsl+soHRUQGfGwi/gRGhjOxVpheVAQ1nWdTNNkIyeHKES6Ut8XIkNQiIoRuiSEQ7zwqeDw6p3LyFDHbgMLdRFdYOysIDwO94kQZHmeswuQo+F6v8MYo/2onI7ecdrvno5fz/Ldc/2nw2/827wA6rOXCOLoDDMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Block&quot;
-        title=&quot;Block&quot;
-        src=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/f058b/6.png&quot;
-        srcset=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/c26ae/6.png 158w,
-/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/6bdcf/6.png 315w,
-/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/f058b/6.png 630w,
-/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/ef6b9/6.png 832w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;Explained in Non-Dev terms: [Inspired from external source]&lt;/h2&gt;
-&lt;p&gt;Imagine if you’re at a movie theatre, you have rows of seats, right. If you assign your friend with an inline seat, they will sit next to you. So the thing with inline seats is that they all are the same physical chair. You can’t manipulate the chair to make it larger or smaller. One size fits all they call it!&lt;/p&gt;
-&lt;p&gt;Now your friend Charlie wants to join you, but because she is the daughter of the owner of the theatre. She gets assigned an inline-block seat. Well, she still gets to sit next to you. Cause she’s “inline” with you (bad pun, lol 😂) and of course you want her to sit next to you. However, because she is the daughter of the owner of the theatre, her mom wants to make sure she’s comfortable. So she gives her a special seat, where her chair is customized and can be adjusted to make it bigger or smaller. Nepotism at its finest 🤫&lt;/p&gt;
-&lt;p&gt;Your friend Jack is also attending the concert. Now your friend Charlie doesn’t really like him. So she tells her mom to assign him a block seat. That way Jack is not seated next to you. Instead he sits in the next row.&lt;/p&gt;
-&lt;h2&gt;To wrap it up&lt;/h2&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/2e237/7.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 106.32911392405065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB40lEQVQ4y62V2YoCQQxF/f+P8kF9cBdRQVQEFfd9381wAlfaqX4YcBpCKpXUzU1q6cTr9TI+9DcijIQG337CSGhwu93scrnY9Xp1YfwXOZ/Pdr/fPxk+n0/bbDa2Xq9tuVy+ZbVavecWi4XLbDaz6XTqMplM3GZtUDKLt9utMyWrWGLDIMr8dDp5DEJC7IAh2cmEE2BsaebFGHu/37sm2fF4dPsD8PF4vMsBsFAoWDqdtmKx6IzwUWImk3FpNpvOdrfb2eFw8MQfgJQEmMqGzXw+t/F47NnFVMCj0chjYQf7oIcwJJAAsgoEwWYewaZnaAAhQvIAEAeAKoGeIoAkk0nrdrtWqVQchEX4tCmsIUkAyBGAGYAKxqaf1WrVyuWyA2rXiVPJzMcyZEMIQksIwk9b5CcRrFRywJCsbAK9QbdaLev3+9br9axer9tgMLBOp2PD4dB1u932OKrQRgaAOncsyOfzlsvlXKdSKctms9ZoNKxWq1mpVPI5esqRApA+BiXLQWlxHz1TmTCjd5xF5mhDAIhD95kFaro2inMa9yrFXj3dFIEgjAGDNa1gHPcOUlns1aPJOv0Cib5AuprEYSsJ88GxYaCScUafr+hzpltBwt836A34H6/1x4v9H/+T6D/lB7JTVKPPhZWdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Block&quot;
-        title=&quot;Block&quot;
-        src=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/f058b/7.png&quot;
-        srcset=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/c26ae/7.png 158w,
-/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/6bdcf/7.png 315w,
-/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/f058b/7.png 630w,
-/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/2e237/7.png 790w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[box-sizing, z-index, position properties]]></title><description><![CDATA[The Box-sizing Property Let me tell you a story about a Beta who wished to be an Alpha. Beta was ‘beta’ because he had a problem, the…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/position/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/position/</guid><pubDate>Sat, 22 Aug 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h1&gt;The Box-sizing Property&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Seeker]]></title><description><![CDATA[Words and Code]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Aug 2021 20:19:29 GMT</lastBuildDate><item><title><![CDATA[box-sizing, z-index, position properties]]></title><description><![CDATA[The Box-sizing Property Let me tell you a story about a Beta who wished to be an Alpha. Beta was ‘beta’ because he had a problem, the…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/position/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/position/</guid><pubDate>Sat, 22 Aug 2020 22:12:03 GMT</pubDate><content:encoded>&lt;h1&gt;The Box-sizing Property&lt;/h1&gt;
 &lt;p&gt;Let me tell you a story about a Beta who wished to be an Alpha. Beta was ‘beta’ because he had a problem, the problem was about him not paying attention to details. One day he decided to meet Alpha and study his structure.&lt;/p&gt;
 &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;&gt;
       &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/hamzaghufran.dev/static/6d14ec1e3abc830094de52f260cb135b/76823/1.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
@@ -690,7 +416,281 @@ width &amp;amp; height = 10px + 1px + 10px + 78px + 10px + 1px + 10px =&gt; 120p
 &lt;p&gt;The Beta element will be relatively positioned until the scroll location of the viewport reaches a point where the element will be &lt;code class=&quot;language-text&quot;&gt;50px&lt;/code&gt; from the top of the viewport. At that point, Beta becomes sticky and remains at a &lt;code class=&quot;language-text&quot;&gt;fixed&lt;/code&gt; position &lt;code class=&quot;language-text&quot;&gt;50px&lt;/code&gt; top of the screen.&lt;/p&gt;
 &lt;h3&gt;Wrapping Up&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Performance &amp;#x26; Accessibility&lt;/strong&gt; &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/position#:~:text=The%20position%20CSS%20property%20sets,final%20location%20of%20positioned%20elements.&quot;&gt;MDN&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Scrolling elements containing &lt;code class=&quot;language-text&quot;&gt;fixed&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;sticky&lt;/code&gt; content can cause performance and accessibility issues. As a user scrolls, the browser must repaint the sticky or fixed content in a new location. Depending on the content needing to be repainted, the browser performance, and the device’s processing speed, the browser may not be able to manage repaints at 60 fps, causing accessibility concerns for people with sensitivities and jank for everyone. One solution is to add &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/will-change&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;will-change: transform&lt;/code&gt;&lt;/a&gt; to the positioned elements to render the element in its own layer, improving repaint speed and therefore improving performance and accessibility.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Scrolling elements containing &lt;code class=&quot;language-text&quot;&gt;fixed&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;sticky&lt;/code&gt; content can cause performance and accessibility issues. As a user scrolls, the browser must repaint the sticky or fixed content in a new location. Depending on the content needing to be repainted, the browser performance, and the device’s processing speed, the browser may not be able to manage repaints at 60 fps, causing accessibility concerns for people with sensitivities and jank for everyone. One solution is to add &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/will-change&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;will-change: transform&lt;/code&gt;&lt;/a&gt; to the positioned elements to render the element in its own layer, improving repaint speed and therefore improving performance and accessibility.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The display property]]></title><description><![CDATA[Often times when you are performing some repitive task, you get comfortable with what it is and fail to find a better - more optimal…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/div/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/div/</guid><pubDate>Thu, 06 Aug 2020 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Often times when you are performing some repitive task, you get comfortable with what it is and fail to find a better - more optimal solution. Or, you overlook some very basic concepts and remain content with the outcome you produce.&lt;/p&gt;
+&lt;p&gt;I am at the end of my two year journey as a web developer and you might expect me to have the right answer when asked about the difference between div-inline, inline and block. I did not have the right answer up until NOW.&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display&lt;/code&gt; property.&lt;/h2&gt;
+&lt;p&gt;The display property specificies the display behavior of an element. It’s a must know for controlling the layout of an element.
+There’s a bunch of property values. By default the listed elements have &lt;code class=&quot;language-text&quot;&gt;block&lt;/code&gt; as their property value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;div&lt;/li&gt;
+&lt;li&gt;h1&lt;/li&gt;
+&lt;li&gt;p&lt;/li&gt;
+&lt;li&gt;li&lt;/li&gt;
+&lt;li&gt;section
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/e1250/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.18987341772153%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA4UlEQVQ4y62TcQuDIBDF+/5fsT8GQbS2otIyS+2NJ9SkZRuxg0dS3buf3pngz5HsXyzLsj1jin2/bHim5IxiX+TSlteYpgl932MYBmitoZTyatsW4ziiaRpkWYa6rpHnOYqieBMa6zAZBz1bLwYTu67zStMUZVl686qqMM8zjDG+AAuvxbwhk7Nnj9tD4t4qVELDugVSyi2BplyTlOuzI/CGzn2eG7dLkn2Q0lobbVwSGoUNIeGRIUlDw0PCow6TkAobwrUQ4rvh0YgwiecXisRUOKs/jc0vcxf75/JNiRG+AEZcA1FmBmwzAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/f058b/1.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/c26ae/1.png 158w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/6bdcf/1.png 315w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/f058b/1.png 630w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/40601/1.png 945w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/78612/1.png 1260w,
+/hamzaghufran.dev/static/2de653bd8bc7305be3fb961abb8cbbe4/e1250/1.png 1786w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A block element starts from a new line and will occupy the whole width of it’s wrapping container.
+DIV2 above takes up the whole width.&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display:inline&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Now lets say that you want to place another div element next to DIV2.
+Lets do that:
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/92bb4/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.55696202531645%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA6klEQVQ4y61T7QqDMAz0/V9x+EdBUPzWamutNy6jmwxbhixwpKTt5dKkCf5syXfgOI63v4PkKosnvaXwKgvNOQdjjMBai23bBOu6Yt93KKXQtq34aZrEBxS+CP0FHi7LEn3fY1kW1HUte/M8y5rxoihQVdVLodIW/WzQEpOG3nbZ4AVPkmUZmqYRoq7rgk8iCknyKAbktQLJnfsoHIZBfJqmyPNcElA1S75qnCg01oE4pXkTsly+IVWN4wittSg/E0bH5pyJpRLfxliUMNRldtZ3j96vCU7ATwp/He7YrEZ/SshiZ25/vRDhE5a8AZySCzA8AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/f058b/2.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/c26ae/2.png 158w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/6bdcf/2.png 315w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/f058b/2.png 630w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/40601/2.png 945w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/78612/2.png 1260w,
+/hamzaghufran.dev/static/dfec17bb548949ab2c6a5c089fb36840/92bb4/2.png 1824w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Tada, that won’t work.
+Let’s assign a &lt;code class=&quot;language-text&quot;&gt;class=&apos;inline-elm&apos;&lt;/code&gt; to both DIV2 and DIV3 and add the following css property:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;inline-elm{
+   display:&apos;inline&apos;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/df88b/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAAA50lEQVQoz61T2W6EMBDj/7+Qh8JDC1Scgk0COfFqps0KaQkSVUeyJqfjiZMM/xzZ2eC+7698F1nqpEh6W2HqJIoQAre999yOoD5BSgmtNWPbNp5LKPwhXJYFTdNgnmd0XYdhGND3PWdrLeq6xjRNvKaqKhhjkWnrMSvDGIWG0g4+BCYkojzP0bYtiqJAWZa8eV3XdMmrcfj4fqAeFb4Gic9fjMJAKcllHIOURcJTU5wPIJVHM0LYuWghBBMcTXLO8X2ljLu8w0gYjaFM/UvCK5fJPXJSKfXKBGPMXYXvj/ts/E8/5e78E1qOsoEydWqOAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/f058b/3.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/c26ae/3.png 158w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/6bdcf/3.png 315w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/f058b/3.png 630w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/40601/3.png 945w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/78612/3.png 1260w,
+/hamzaghufran.dev/static/b305b2bf2a4216bef80c77912b5ae3fb/df88b/3.png 1906w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The inline property displays an element as an inline element. In other words, inline elements do NOT start on a new line and only take up as much width as its content.&lt;/p&gt;
+&lt;p&gt;As much width as its content ?
+Let me explain: Using div as a button type component.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn{
+    display:&apos;inline&apos;
+    border:&apos;1px solid black&apos;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/3c051/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.278481012658226%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAlklEQVQY062PUQrDIBBEvf9FPEjwDIn5MBBEghAJMQqCOmU39Kf0K+3C8GBcnVHgzyNKKYgxgnhdF3LOrPM8mXRGPvE4DvZTSqi1orUG5xystdi2Db13iH3fMc8zQggYxxHLssB7D601jDGsdV354jRNvEs7FEYzDAOklFBK3Q1/+R41okLUkMgPkvlU3wLE02Zvfga8AD8P0vCQNQnZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/f058b/4.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/c26ae/4.png 158w,
+/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/6bdcf/4.png 315w,
+/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/f058b/4.png 630w,
+/hamzaghufran.dev/static/f5f13ca2bb1bafe42367529db4279b94/3c051/4.png 760w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You don’t like that.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/e9beb/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA90lEQVQoz6VSuYqEUBD0/z/C3EBMzM29EPEMZMADg0k98KylmnWYEYVZtqF4bVvdr17RCn5j3/fX+S3e+45QcIoz4S7ueModaV1XDMMgGMcRy7IIWCfeX3M58PjB5jAM4fs+Ho8HmqbB8/mUvCgKQVmWH0M/Bp49oQrTNKGqKmzbhuu6CIIAmqbBMAzoui6XnT0/8ksP53kWBX3fC7quE+Wsb9v2UnfVq5BEUNkxiJimSZpJ4klwKOvk0lvmBPsOlUqSJMjzHG3bwnEcZFkmfqVpiiiK5JtPrqoKnuehrmuBZVliSRzH4jkvuFyb/4Q8+S+L/M2i/wCFdQayEsYKnAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/f058b/5.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/c26ae/5.png 158w,
+/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/6bdcf/5.png 315w,
+/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/f058b/5.png 630w,
+/hamzaghufran.dev/static/f7b9e532c9fdf2116e429bf5e9c3435a/e9beb/5.png 730w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;YES I KNOW, this is the content, an &lt;code class=&quot;language-text&quot;&gt;inline&lt;/code&gt; element will acquire as much width as its content. Hope it’s clear now.
+To fix this, can we do something like this ?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn {
+  display: inline;
+  width: 100px; /* ❌ won&apos;t have any effect */
+  height: 100px; /* ❌ won&apos;t have any effect */
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;No we can’t, width and height property has no effect on inline elements.
+How to solve this now ?&lt;/p&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;display:inline-block&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Introducing &lt;code class=&quot;language-text&quot;&gt;inline-block&lt;/code&gt;. Displays an element as an inline-level block container. You CAN set height and width values.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;.inline-btn {
+  display: inline-block;
+  width: 100px; /* ✅  yes, it will work */
+  height: 100px; /* ✅  yes, it will work */
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It’s essentially the same thing as inline, except that you can set height and width values.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/ef6b9/6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.68354430379746%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAABLklEQVQ4y61UyYqDQBD1/z/Fswf/QcxBvLmiBxH3Je5a4RU0Y9TJIJOCSnxq3tJdHYm+XBI+tm273eu6vmHBIwnw3xI87HAcR3Ich4qiIM/zKAxDiqKIr4MgINd1Gdu2TWma8v3H48H3fd+naZp+HIqLuq5pGAYqy5K6rqN5nqlpGur7ntq2Zfx8PhnjOcTxHP0xMtSyLGOXcRxzAydJwt8gqqrqFPct8n5x4QIxZVkmTdOY2DAMUlWVFEUhy7LY5bIsl+soHRUQGfGwi/gRGhjOxVpheVAQ1nWdTNNkIyeHKES6Ut8XIkNQiIoRuiSEQ7zwqeDw6p3LyFDHbgMLdRFdYOysIDwO94kQZHmeswuQo+F6v8MYo/2onI7ecdrvno5fz/Ldc/2nw2/827wA6rOXCOLoDDMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/f058b/6.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/c26ae/6.png 158w,
+/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/6bdcf/6.png 315w,
+/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/f058b/6.png 630w,
+/hamzaghufran.dev/static/5b169d91479912eee6f37076738ecd76/ef6b9/6.png 832w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Explained in Non-Dev terms: [Inspired from external source]&lt;/h2&gt;
+&lt;p&gt;Imagine if you’re at a movie theatre, you have rows of seats, right. If you assign your friend with an inline seat, they will sit next to you. So the thing with inline seats is that they all are the same physical chair. You can’t manipulate the chair to make it larger or smaller. One size fits all they call it!&lt;/p&gt;
+&lt;p&gt;Now your friend Charlie wants to join you, but because she is the daughter of the owner of the theatre. She gets assigned an inline-block seat. Well, she still gets to sit next to you. Cause she’s “inline” with you (bad pun, lol 😂) and of course you want her to sit next to you. However, because she is the daughter of the owner of the theatre, her mom wants to make sure she’s comfortable. So she gives her a special seat, where her chair is customized and can be adjusted to make it bigger or smaller. Nepotism at its finest 🤫&lt;/p&gt;
+&lt;p&gt;Your friend Jack is also attending the concert. Now your friend Charlie doesn’t really like him. So she tells her mom to assign him a block seat. That way Jack is not seated next to you. Instead he sits in the next row.&lt;/p&gt;
+&lt;h2&gt;To wrap it up&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/2e237/7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 106.32911392405065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB40lEQVQ4y62V2YoCQQxF/f+P8kF9cBdRQVQEFfd9381wAlfaqX4YcBpCKpXUzU1q6cTr9TI+9DcijIQG337CSGhwu93scrnY9Xp1YfwXOZ/Pdr/fPxk+n0/bbDa2Xq9tuVy+ZbVavecWi4XLbDaz6XTqMplM3GZtUDKLt9utMyWrWGLDIMr8dDp5DEJC7IAh2cmEE2BsaebFGHu/37sm2fF4dPsD8PF4vMsBsFAoWDqdtmKx6IzwUWImk3FpNpvOdrfb2eFw8MQfgJQEmMqGzXw+t/F47NnFVMCj0chjYQf7oIcwJJAAsgoEwWYewaZnaAAhQvIAEAeAKoGeIoAkk0nrdrtWqVQchEX4tCmsIUkAyBGAGYAKxqaf1WrVyuWyA2rXiVPJzMcyZEMIQksIwk9b5CcRrFRywJCsbAK9QbdaLev3+9br9axer9tgMLBOp2PD4dB1u932OKrQRgaAOncsyOfzlsvlXKdSKctms9ZoNKxWq1mpVPI5esqRApA+BiXLQWlxHz1TmTCjd5xF5mhDAIhD95kFaro2inMa9yrFXj3dFIEgjAGDNa1gHPcOUlns1aPJOv0Cib5AuprEYSsJ88GxYaCScUafr+hzpltBwt836A34H6/1x4v9H/+T6D/lB7JTVKPPhZWdAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Block&quot;
+        title=&quot;Block&quot;
+        src=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/f058b/7.png&quot;
+        srcset=&quot;/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/c26ae/7.png 158w,
+/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/6bdcf/7.png 315w,
+/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/f058b/7.png 630w,
+/hamzaghufran.dev/static/aa3fcc070cdd71153be1f07540fbf304/2e237/7.png 790w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
 &lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
 &lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
