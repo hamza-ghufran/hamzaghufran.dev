@@ -340,38 +340,37 @@ So, modular multiplicative inverse of 7 is 43 when 7*43 is congruent to 1 modulu
 - Diophantine equation, Extended Euclidean algorithm And Bezout's Identity.
 
 A Linear Diophantine Equation (in two variables) is an equation of the general form:
-$$ px + qy = c $$
-where p, q, c are given integers, and x, y are unknown integers.
+$$ ax + by = c $$
+where a, b, c are given integers, and x, y are unknown integers.
 
-We have `p = 7` (our large prime number)
-        `q = ϕ(pq) = 63`
+For `c` let's have a look at Bezout's identity, the theorem goes as:
+For nonzero integers a and b, let c be the greatest common divisor c = gcd(a,b). Then, there exist integers x and y such that
+$$ ax + by = gcd(a, b) $$
+$$ ax + by = c $$
 
-For `c`let's have a look at Bezout's identity, the theorem goes as:
-For nonzero integers p and q, let c be the greatest common divisor c = gcd(p,q). Then, there exist integers x and y such that
-$$ px + qy = gcd(p, q) $$
-$$ px + qy = c $$
+One important application is, if a & b are relatively prime, we have gcd(a, b) = c = 1 
 
-One important application is, if p & q are relatively prime, we have gcd(p, q) = c = 1 
+$$ ax + by = 1 $$
 
-$$ px + qy = 1 $$
+For small numbers a and b, we can make a guess as what numbers work. For example, in solving 3 x + 8 y = 13x+8y=1, we see that 3 * 3 + 8 * (-1) = 13×3+8×(−1)=1. However, in solving 2014 x + 4021 y = 2014x+4021y=1, it is much harder to guess what the values are.
 
-For small numbers p and q, we can make a guess as what numbers work. For example, in solving 3 x + 8 y = 13x+8y=1, we see that 3 * 3 + 8 * (-1) = 13×3+8×(−1)=1. However, in solving 2014 x + 4021 y = 2014x+4021y=1, it is much harder to guess what the values are.
-
-The way we find x,y is through the Extended Euclidean Algorithm. If you recall, the regular Euclidean Algorithm takes in p,q and then gives us the greatest common divisor, but the Extended Eucliden Algorithm takes p,q and then gives us the greatest common divisor d along with x,y.
+The way we find x,y is through the Extended Euclidean Algorithm. If you recall, the regular Euclidean Algorithm takes in a,b and then gives us the greatest common divisor, but the Extended Eucliden Algorithm takes a,b and then gives us the greatest common divisor d along with x,y.
 
 --- Insert extended Euclidean algorithm ---
 
 Now, to find the RSA private key, we need: `d of e modulo ϕ(pq).`
 
 $$ d ≡ e ^-1 (mod ϕ(pq)) $$
+remember gcd(e, ϕ(pq)) = 1
 
-taking `px + qy = 1` equation mod q to get:
+Thus, by Bezout's Identity, we get there exist 𝑥,𝑦 such that:
 
-$$ px + (ϕ(pq))y = 1 $$
-$$ px = 1 - (ϕ(pq))y $$
+$$ ex + (ϕ(pq))y = 1 $$
+$$ ex = 1 - (ϕ(pq))y $$
 take the above equation modulo `ϕ(pq)` to get:
-$$ px ≡ 1 (ϕ(pq)) $$
+$$ ex ≡ 1 (ϕ(pq)) $$
 
+Thus, x = d is the private key, so we can find the private key by figuring out x using the Extended Euclidean Algorithm
 
 * Summing up part 2
 
