@@ -97,6 +97,29 @@ Note: that neither integers need to be prime in order for them to be relatively 
 
 - `GCD`
 
+As we know from grade school, when we divide one integer by another (nonzero) integer we get an integer quotient (the "answer") plus a remainder (generally a rational number). For instance,
+13/5 = 2 ("the quotient") + 3/5 ("the remainder").
+We can rephrase this division, totally in terms of integers, without reference to the division operation:
+13 = 2(5) + 3.
+Note that this expression is obtained from the one above it by multiplying through by the divisor 5.
+We refer to this way of writing a division of integers as the Division Algorithm for Integers. More formally stated:
+
+If a and b are positive integers, there exist integers unique non-negative integers q and r so that
+a = qb + r , where 0[less than or equal]r < b.
+q is called the quotient and r the remainder.
+The greatest common divisor of integers a and b, denoted by gcd(a,b), is the largest integer that divides (without remainder) both a and b. So, for example:
+
+gcd(15, 5) = 5,	gcd(7, 9) = 1,	gcd(12, 9) = 3,	gcd(81, 57) = 3.
+The gcd of two integers can be found by repeated application of the division algorithm, this is known as the Euclidean Algorithm. You repeatedly divide the divisor by the remainder until the remainder is 0. The gcd is the last non-zero remainder in this algorithm. The following example shows the algorithm.
+
+Finding the gcd of 81 and 57 by the Euclidean Algorithm:
+
+81 = 1(57) + 24
+57 = 2(24) + 9
+24 = 2(9) + 6
+9 = 1(6) + 3
+6 = 2(3) + 0.
+
 ....
 
 Apart from public key cryptography a few other areas where prime numbers are also used in computing are: 
@@ -246,7 +269,7 @@ gcd(13, 60) = 1
 e = 7,13 ... for ϕ(pq) = 60
 ```
 
-### Summing up part 1
+* Summing up part 1
 
 So far we have two parts to the algorithms which make up for the public key i.e 
 
@@ -255,26 +278,116 @@ So far we have two parts to the algorithms which make up for the public key i.e
 
 ## The Algorithm Part 2: Generating the private key
 
-1. Modulo Inverse
-2. Bezout's identity
-3. Euler's extended algo to calc modulo inverse and gcd (Diophantine equations)
+A couple of mathimatical concepts play a role in generating the private key. These are:
 
-modular inverse `d of e modulo ϕ(n).` 
+- Modulo Inverse
+- Diophantine equation
+- Bézout's identity
+- Extended Euclidean algorithm
 
-<!-- Now that the public and private keys have been generated, they can be reused as often as wanted. To transmit a message, follow these steps: -->
+In order to generate the private key we take the modular inverse `d of e modulo ϕ(pq).` where the resulting d is the private key. 
 
-Since the implementation of RSA makes heavy use of modular arithmetic, Euler's theorem, and Euler's totient function. 
+### So what is a Modulo inverse ?
 
-The simplest linear Diophantine equation takes the form ax + by = c, where a, b and c are given integers.
+For a quick revision of modular arithmatic and congruence modulo [here](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic) & [here](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/congruence-modulo)
+
+First of all, what is an inverse?
+
+A number x when multiplied by its inverse results to 1. 
+
+$$x * 1/x = 1$$
+$$x * x^-1 = 1$$
+$$7 * 1/7 = 1$$
+
+- All real numbers other than 0 have an inverse
+- Multiplying a number by the inverse of x is equivalent to dividing by x. (7/7 = 1)
+
+A modular multiplicative inverse of an integer a is an integer x such that a*x is congruent to 1 modular some modulus m. To write it in a formal way: we want to find an integer x so that.
+
+$$a*x ≡ 1 mod m$$ 
+
+which is equivalent to
+
+$$a*x (mod m) = 1 $$
+
+<!-- - Only the numbers coprime to m have a modular inverse (mod m) -->
+
+The straight forward to calculate the modular inverse is to:
+`Calculate a * x mod m for x values starting from 0 to m - 1.`
+
+```js
+Let a = 7, ϕ(pq) = m = 60
+Calculate a * x mod m = 1, we have to find out x.
+
+const a = 7
+const m = 60
+
+function equation(x) {
+  return (a * x) % m
+}
+
+for (let x = 0; x < m; x++) {
+  if (equation(x) === 1) {
+    console.log(x) // 43
+  }
+}
+```
+
+Try out the snippet and by altering the values of a & m you will notice that a result is displayed for only the values for a & m when both are relatively prime. Since, only the numbers coprime to m have a modular inverse (mod m)
+
+So, modular multiplicative inverse of 7 is 43 when 7*43 is congruent to 1 modulus 60
+
+- Diophantine equation, Extended Euclidean algorithm And Bezout's Identity.
+
+A Linear Diophantine Equation (in two variables) is an equation of the general form:
+$$ px + qy = c $$
+where p, q, c are given integers, and x, y are unknown integers.
+
+We have `p = 7` (our large prime number)
+        `q = ϕ(pq) = 63`
+
+For `c`let's have a look at Bezout's identity, the theorem goes as:
+For nonzero integers p and q, let c be the greatest common divisor c = gcd(p,q). Then, there exist integers x and y such that
+$$ px + qy = gcd(p, q) $$
+$$ px + qy = c $$
+
+One important application is, if p & q are relatively prime, we have gcd(p, q) = c = 1 
+
+$$ px + qy = 1 $$
+
+For small numbers p and q, we can make a guess as what numbers work. For example, in solving 3 x + 8 y = 13x+8y=1, we see that 3 * 3 + 8 * (-1) = 13×3+8×(−1)=1. However, in solving 2014 x + 4021 y = 2014x+4021y=1, it is much harder to guess what the values are.
+
+The way we find x,y is through the Extended Euclidean Algorithm. If you recall, the regular Euclidean Algorithm takes in p,q and then gives us the greatest common divisor, but the Extended Eucliden Algorithm takes p,q and then gives us the greatest common divisor d along with x,y.
+
+--- Insert extended Euclidean algorithm ---
+
+Now, to find the RSA private key, we need: `d of e modulo ϕ(pq).`
+
+$$ d ≡ e ^-1 (mod ϕ(pq)) $$
+
+taking `px + qy = 1` equation mod q to get:
+
+$$ px + (ϕ(pq))y = 1 $$
+$$ px = 1 - (ϕ(pq))y $$
+take the above equation modulo `ϕ(pq)` to get:
+$$ px ≡ 1 (ϕ(pq)) $$
 
 
+* Summing up part 2
 
+Now that the public and private keys have been generated, they can be reused as often as wanted.
 
 
 References: 
 
+algo- https://stackoverflow.com/questions/26985808/calculating-the-modular-inverse-in-javascript
+eea - https://www.youtube.com/watch?v=6KmhCKxFWOs
 1. https://www.geeksforgeeks.org/rsa-algorithm-cryptography/
 2. https://brilliant.org/wiki/rsa-encryption/#applications-and-vulnerabilities
 3. https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns/imp-prime-and-composite-numbers/v/prime-numbers
 4. Image of numbers from: https://www.national5.com/integers/
 5. https://crypto.stackexchange.com/questions/5715/phipq-p-1-q-1
+6. https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/modular-inverses
+7. https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic
+8. https://crypto.stackexchange.com/questions/5889/calculating-rsa-private-exponent-when-given-public-exponent-and-the-modulus-fact
+9. https://math.stackexchange.com/questions/2074181/what-is-the-importance-of-b%C3%A9zouts-identity
