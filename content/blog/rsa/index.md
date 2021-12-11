@@ -9,6 +9,8 @@ A Public key cryptography, also known as asymmetric cryptography, uses two diffe
 - Public key : can be shared with everyone.
 - Private key: must be kept secret.
 
+## 10,000 ft view
+
 ## What principle is the RSA based on ? 
 
 It is based on the principle that it is easy to multiply large numbers, but factoring large numbers is very difficult.
@@ -89,6 +91,11 @@ The first 25 prime numbers (all the prime numbers less than 100)
 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
 ```
 
+Apart from public key cryptography a few other areas where prime numbers are also used in computing are: 
+* [checksums]()
+* [hash tables]()
+* [pseudorandom number generators]()
+
 - `Relatively Prime`
 
 Two integers are relatively prime when there are no common factors other than 1. This means that no other integer could divide both numbers evenly. Two integers  𝑎,𝑏  are called relatively prime to each other if  gcd(𝑎,𝑏)=1 .
@@ -97,19 +104,19 @@ Note: that neither integers need to be prime in order for them to be relatively 
 
 - `GCD`
 
-As we know from grade school, when we divide one integer by another (nonzero) integer we get an integer quotient (the "answer") plus a remainder (generally a rational number). For instance,
-13/5 = 2 ("the quotient") + 3/5 ("the remainder").
+As we know from grade school, when we divide one integer by another (nonzero) integer we get an integer quotient (the "answer") plus a remainder (generally a rational number). 
+For instance, 13/5 = 2 ("the quotient") + 3/5 ("the remainder").
 We can rephrase this division, totally in terms of integers, without reference to the division operation:
-13 = 2(5) + 3.
+$$13 = 2(5) + 3$$
 Note that this expression is obtained from the one above it by multiplying through by the divisor 5.
-We refer to this way of writing a division of integers as the Division Algorithm for Integers. More formally stated:
+We refer to this way of writing a division of integers as the `Division Algorithm` for Integers. More formally stated:
 
-If a and b are positive integers, there exist integers unique non-negative integers q and r so that
-a = qb + r , where 0[less than or equal]r < b.
+If a and b are positive integers, there exist integers unique non-negative integers q and r so that a = qb + r , where 0[less than or equal]r < b.
 q is called the quotient and r the remainder.
 The greatest common divisor of integers a and b, denoted by gcd(a,b), is the largest integer that divides (without remainder) both a and b. So, for example:
 
-gcd(15, 5) = 5,	gcd(7, 9) = 1,	gcd(12, 9) = 3,	gcd(81, 57) = 3.
+$$gcd(15, 5) = 5,	gcd(7, 9) = 1,	gcd(12, 9) = 3,	gcd(81, 57) = 3.$$
+
 The gcd of two integers can be found by repeated application of the division algorithm, this is known as the Euclidean Algorithm. You repeatedly divide the divisor by the remainder until the remainder is 0. The gcd is the last non-zero remainder in this algorithm. The following example shows the algorithm.
 
 Finding the gcd of 81 and 57 by the Euclidean Algorithm:
@@ -120,25 +127,20 @@ Finding the gcd of 81 and 57 by the Euclidean Algorithm:
 9 = 1(6) + 3
 6 = 2(3) + 0.
 
-....
+```js
+function euclideanGcd(a, b) {
+  if (a < b) return euclideanGcd(b, a)
 
-Apart from public key cryptography a few other areas where prime numbers are also used in computing are: 
-* [checksums]()
-* [hash tables]()
-* [pseudorandom number generators]()
+  if (b === 0) return a
+
+  return euclideanGcd(b, a % b)
+}
+```
 
 ### How does the public key cryptography works: 
+from the example:
 
-Rolling pre-credit scene-
-
-l'acteur:  Bob
-l'actrice: Alice
-
-
-<insert> the whole walk thru
-
-
-Overview of the algorithm, in the enxt section we will break it up into parts and analyze each step
+Overview of the algorithm, in the next section we will break it up into parts and analyze each step
 
 1. To begin, Alice selects two large prime numbers, p and q. Their product will be half of the public key, n=pq.
 
@@ -148,6 +150,13 @@ Overview of the algorithm, in the enxt section we will break it up into parts an
 The resulting d is the private key of Alice.
 
 4. Alice distributes both portions of the public key: n and e, but d she keeps it to herself.
+
+So there are essentially two parts to the alogrithm: 
+
+1. Generating the public key
+2. Generating the private key
+
+Let's look at them in detail and get a good grasp as to how it works, then we will look into how the message transmission and decryption on the receiver ends work.
 
 ## The Algorithm Part 1: Generating the public key
 
@@ -208,14 +217,6 @@ Have a look [here](https://www.khanacademy.org/computing/computer-science/crypto
 You can also try out this snippet to confirm the same, insert any valid prime number n
 
 ```js
-function euclideanGcd(a, b) {
-  if (a < b) return euclideanGcd(b, a)
-
-  if (b === 0) return a
-
-  return euclideanGcd(b, a % b)
-}
-
 /**
  * @param {number} n 
  */
@@ -310,8 +311,6 @@ which is equivalent to
 
 $$a*x (mod m) = 1 $$
 
-<!-- - Only the numbers coprime to m have a modular inverse (mod m) -->
-
 The straight forward to calculate the modular inverse is to:
 `Calculate a * x mod m for x values starting from 0 to m - 1.`
 
@@ -337,7 +336,7 @@ Try out the snippet and by altering the values of a & m you will notice that a r
 
 So, modular multiplicative inverse of 7 is 43 when 7*43 is congruent to 1 modulus 60
 
-- Diophantine equation, Extended Euclidean algorithm And Bezout's Identity.
+### Diophantine equation and Bezout's Identity
 
 A Linear Diophantine Equation (in two variables) is an equation of the general form:
 $$ ax + by = c $$
@@ -354,10 +353,6 @@ $$ ax + by = 1 $$
 
 For small numbers a and b, we can make a guess as what numbers work. For example, in solving 3 x + 8 y = 13x+8y=1, we see that 3 * 3 + 8 * (-1) = 13×3+8×(−1)=1. However, in solving 2014 x + 4021 y = 2014x+4021y=1, it is much harder to guess what the values are.
 
-The way we find x,y is through the Extended Euclidean Algorithm. If you recall, the regular Euclidean Algorithm takes in a,b and then gives us the greatest common divisor, but the Extended Eucliden Algorithm takes a,b and then gives us the greatest common divisor d along with x,y.
-
---- Insert extended Euclidean algorithm ---
-
 Now, to find the RSA private key, we need: `d of e modulo ϕ(pq).`
 
 $$ d ≡ e ^-1 (mod ϕ(pq)) $$
@@ -372,9 +367,104 @@ $$ ex ≡ 1 (ϕ(pq)) $$
 
 Thus, x = d is the private key, so we can find the private key by figuring out x using the Extended Euclidean Algorithm
 
+### Extended Euclidean algorithm
+
+If you recall, the regular Euclidean Algorithm takes in a, b and then gives us the greatest common divisor `gcd(a, b)`.
+The extended Euclidean algorithm is an algorithm to compute integers x and y such that: $$ax+by=gcd(a,b)$$
+given a and b it gives us the greatest common divisor `d along with x, y`.
+
+By reversing the steps in the Euclidean algorithm, it is possible to find these integers `x` and `y`.
+
+head over to [here](https://www.youtube.com/watch?v=6KmhCKxFWOs) to understand how to use the forumla. 
+
+```
+lets calculate x and y for given integers e = 13, ϕ(pq) = 60
+
+e x + ϕ(pq)y = gcd(13, ϕ(pq))
+13x + 60y = 1
+
+Step: 1 
+we first calculate the gcd of (13, 60), recall from above, the division algorithm way
+
+60 = 13(4) + 8
+13 = 8(1) + 5
+8 = 5(1) + 3
+5 = 3(1) + 2
+3 = 2(1) + 1 <--- 
+2 = 1(1) + 0 
+
+Step: 2 
+Now reversing the steps: 
+
+First let's write all the equations (except the last one) with respect to the remainer
+
+60 - 13(4) = 8
+13 - 8(1) = 5  
+8 - 5(1) = 3
+5 - 3(1) = 2
+3 - 2(1) = 1
+
+replacing the vars
+
+3 - 2(1) = 1 --> where 2 = 5 - 3(1)
+
+we get:
+3 - (5 - 3(1))(1) = 1
+3 - 5(1) + 3(1) = 1  
+3(2) - 5(1) = 1
+
+•••
+3(2) - 5(1) = 1 --> where 3 = 8 - 5(1)
+
+we get:
+(8 - 5(1))(2) - 5(1) = 1
+8(2) - 5(2) - 5(1) = 1
+8(2) - 5(3) = 1
+
+•••
+8(2) - 5(3) = 1 --> where 5 = 13 - 8(1)
+
+we get:
+8(2) - (13 - 8(1))(3) = 1
+8(2) - 13(3) + 8(3) = 1
+-13(3) - 8(5) = 1
+
+•••
+-13(3) - 8(5) = 1 --> where 8 = 60 - 13(4)
+
+we get:
+-13(3) - (60 - 13(4))(5) = 1
+-13(3) - 60(5) - 13(20) = 1
+-13(23) - 60(5) = 1
+
+thus 13x + 60y = 1
+
+x = -23
+y = -5
+gcd = 1
+
+two conditions for d 
+1. if d > ϕ(pq):
+     d = d % ϕ(pq)
+2. id d is -ve
+     d = d + ϕ(pq)
+
+Second condition meets, thus: 
+
+d = d + ϕ(pq)
+d = -23 + 60
+d = 37
+```
+
+We now have d = 37
+
+The 
+
 * Summing up part 2
 
+The receiver distributes both parts of the public key: n and e. d is kept secret.
 Now that the public and private keys have been generated, they can be reused as often as wanted.
+
 
 
 References: 
